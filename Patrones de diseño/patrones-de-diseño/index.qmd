@@ -1,0 +1,3 @@
+# Abstract
+
+Este libro ofrece un análisis exhaustivo y actualizado sobre los patrones de diseño en el desarrollo de software, abordando su definición, clasificación, propósito y aplicaciones en distintos paradigmas de programación. Además, examina anti-patrones comunes que afectan la calidad del software y explora tendencias emergentes que están transformando la disciplina, con énfasis en la programación orientada a objetos y su evolución frente a tecnologías modernas como la nube, la inteligencia artificial y DevOps.

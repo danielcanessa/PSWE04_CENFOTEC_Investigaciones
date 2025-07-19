@@ -1,0 +1,31 @@
+project:
+  type: book
+
+book:
+  title: "Investigación sobre Patrones de Diseño"
+  subtitle: "PSWE-04 Diseño de Software"
+  author:
+    - Daniel Canessa Valverde
+    - Stephanie Delgado Brenes
+  date: "2025-07-18"
+  chapters:
+    - index.qmd
+    - 01-introduccion.qmd
+    - 02-objetivos.qmd
+    - 03-paradigmas-patrones.qmd
+    - 04-principios-solid-grasp.qmd
+    - 05-clasificacion-patrones.qmd
+    - 06-patrones-mas-alla-gof.qmd
+    - 07-tendencias-futuras-en-patrones-de-diseño.qmd
+    - 08-antipatrones.qmd
+    - 09-conclusiones.qmd
+    - references.qmd
+
+bibliography: references.bib
+
+format:
+  pdf:
+    documentclass: scrreprt
+
+
+

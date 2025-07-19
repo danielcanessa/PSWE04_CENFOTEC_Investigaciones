@@ -1,0 +1,15 @@
+# Anti-patrones
+
+Así como existen patrones de diseño reconocidos por aportar soluciones efectivas a problemas recurrentes, la literatura también ha documentado los **anti-patrones**. Estos son prácticas comunes que, aunque parezcan resolver un problema a corto plazo, suelen conducir a sistemas difíciles de mantener, poco escalables o propensos a errores [@brown1998antipatterns].
+
+Identificar y evitar anti-patrones es fundamental para garantizar la calidad del software y aprender de errores recurrentes en la industria.
+
+## Ejemplos de anti-patrones:
+
+- **God Object** ("Objeto Dios"): concentración excesiva de responsabilidades en una sola clase u objeto, violando el principio de responsabilidad única y dificultando el mantenimiento.  
+- **Spaghetti Code:** código sin estructura clara, con dependencias y saltos de control desordenados, lo que dificulta su comprensión y modificación.  
+- **Golden Hammer:** aplicar siempre la misma solución conocida (patrón, tecnología o enfoque) a cualquier problema, incluso cuando no es adecuado.  
+- **Lava Flow:** acumulación de código obsoleto o experimental que permanece en el sistema, generando complejidad innecesaria y dificultando el mantenimiento.  
+- **Cargo Cult Programming:** imitar prácticas, patrones o fragmentos de código sin comprender su propósito, esperando que simplemente “funcionen”.
+
+Un caso particularmente relevante en el contexto de este trabajo es el uso inapropiado o forzado de patrones de diseño. Aplicar patrones por moda, sin un análisis real del problema, o tratar de incorporar demasiados patrones en una solución sencilla, puede convertir el diseño en un sistema innecesariamente complejo, rígido y difícil de entender. Este fenómeno es conocido como **Pattern Overuse** o **Pattern Abuse**, y se considera un anti-patrón moderno, pues contradice el objetivo central de los patrones: simplificar el diseño y mejorar la mantenibilidad [@coplien1997whypatterns].

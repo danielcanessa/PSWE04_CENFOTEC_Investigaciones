@@ -1,0 +1,11 @@
+# Conclusiones
+
+A partir del análisis realizado en este documento, se pueden establecer las siguientes conclusiones basadas en los objetivos específicos planteados:
+
+- Se identificaron y describieron los patrones de diseño más influyentes en la ingeniería de software, presentando su clasificación clásica ("GoF"), así como la incorporación de patrones arquitectónicos, de integración, nube y modernos. Se ilustraron casos de uso representativos que muestran la aplicabilidad de estos patrones en la práctica profesional.
+
+- El análisis realizado permitió evidenciar que, aunque muchos patrones fueron formalizados en el contexto de la programación orientada a objetos ("OOP"), existen enfoques recurrentes y patrones útiles en otros paradigmas, como el estructurado y el funcional. Comprender el propósito y los beneficios de cada patrón, y su pertinencia según el paradigma, es fundamental para su aplicación efectiva.
+
+- Se identificaron tendencias emergentes en respuesta a nuevos retos tecnológicos, reafirmando la necesidad de actualización y reflexión constante en la disciplina.
+
+- Se destacó la importancia de reconocer y evitar "anti-patrones", incluyendo el abuso o la aplicación acrítica de patrones de diseño, que pueden resultar perjudiciales para la calidad del software.

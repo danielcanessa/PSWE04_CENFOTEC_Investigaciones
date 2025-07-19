@@ -1,0 +1,39 @@
+# ¿Qué es un patrón de diseño?
+
+Un patrón de diseño en ingeniería de software es una solución reutilizable a un problema común que ocurre frecuentemente en un contexto particular durante el proceso de desarrollo de software. El concepto de patrones surge originalmente en el campo de la arquitectura, donde Christopher Alexander y sus colaboradores los describieron como soluciones recurrentes a problemas de diseño en edificaciones y urbanismo [@alexander1977pattern]. Esta idea fue posteriormente adaptada al desarrollo de software por Erich Gamma, Richard Helm, Ralph Johnson y John Vlissides, conocidos como la “Banda de los Cuatro” ("Gang of Four" o "GoF"), quienes en 1994 publicaron *Design Patterns: Elements of Reusable Object-Oriented Software*, esta publicación formalizó el uso de patrones en el ámbito del software [@gamma1994design].
+
+A diferencia de un fragmento de código reutilizable, un patrón de diseño es una descripción abstracta de cómo resolver un tipo de problema específico de diseño, sin imponer una implementación única. Esto permite a los desarrolladores aplicar soluciones probadas y documentadas, facilitando la construcción de sistemas más robustos y mantenibles [@gamma1994design, @buschmann1996pattern].
+
+Típicamente, un patrón de diseño incluye:
+
+- El nombre del patrón.  
+- El problema que resuelve.  
+- La solución propuesta (estructura y dinámica).  
+- Las consecuencias de su aplicación.
+
+# ¿Por qué se usan los patrones de diseño?
+
+Los patrones de diseño previenen “reinventar la rueda” y proporcionan un lenguaje común para discutir problemas y estrategias en el desarrollo de software [@gamma1994design, @schmidt1995using]. Utilizar patrones contribuye significativamente a la calidad del software, algunos beneficios clave son:
+
+- **Reutilización de soluciones:** los patrones condensan la experiencia y el conocimiento de la industria, evitando la necesidad de reinventar soluciones ante los mismos problemas en distintos contextos [@gamma1994design, @buschmann1996pattern].  
+- **Mejora de la comunicación:** el uso de patrones proporciona un vocabulario común y preciso para que los equipos de desarrollo puedan discutir, documentar y transferir ideas de manera clara y eficiente [@gamma1994design, @schmidt1995using].  
+- **Buenas prácticas:** orientan hacia la creación de sistemas robustos, flexibles y mantenibles, ayudando a evitar errores comunes y facilitando la evolución del software [@gamma1994design, @buschmann1996pattern, @freeman2009growing].  
+- **Consistencia y estandarización:** el uso de patrones contribuye a establecer criterios uniformes en la estructura del software, facilitando la comprensión y colaboración entre equipos [@gamma1994design, @buschmann1996pattern].  
+- **Mantenibilidad y escalabilidad:** facilitan la adaptación del sistema a nuevos requerimientos y su mantenimiento a lo largo del tiempo, permitiendo cambios controlados y predecibles [@buschmann1996pattern].  
+- **Ahorro de tiempo y aumento de la productividad:** al ofrecer soluciones estructuradas a problemas conocidos, los patrones agilizan el proceso de diseño y toma de decisiones [@gamma1994design, @buschmann1996pattern].
+
+# Patrones de diseño según paradigma de programación
+
+El concepto de patrón de diseño no está limitado a la programación orientada a objetos ("OOP"). Aunque la formalización más conocida y documentada de los patrones provienen de OOP, la realidad es que todos los paradigmas de programación presentan problemas recurrentes para los cuales se han desarrollado soluciones reutilizables y reconocidas. Así, lenguajes como "C", que no implementan orientación a objetos, también hacen uso de patrones, aunque estos estén enfocados en el control del flujo, la gestión modular y el manejo eficiente de recursos [@buschmann1996pattern].
+
+Tal como señala Buschmann et al. [@buschmann1996pattern], “los patrones de diseño representan soluciones probadas para problemas recurrentes en el diseño de software, independientemente del paradigma o lenguaje.” La diferencia radica en el nivel de abstracción, el tipo de problemas que resuelven y la forma en que se expresan en el lenguaje o el paradigma en cuestión.
+
+## Particularidades de los patrones según el paradigma
+
+- **Orientado a objetos:** La mayoría de los patrones de diseño clásicos y principios como "SOLID" y "GRASP" se definieron para este paradigma, aprovechando conceptos como clases, objetos, herencia y polimorfismo.  
+- **Estructurado:** Lenguajes como "C" o Pascal emplean patrones enfocados en la organización del flujo de control (como "Table-Driven Methods" o "State Machines"), manejo de recursos y modularidad, esto incluso sin contar con una sintaxis para objetos.  
+- **Funcional:** Los patrones se centran en la composición de funciones, inmutabilidad y transformación de datos. Patrones como "Monad" o "Pipe" son característicos en Haskell, Scala o F#.  
+- **Lógico:** Lenguajes como Prolog emplean patrones para resolución de problemas mediante reglas, inferencia y backtracking.
+
+
+> **Nota:** Si bien existen patrones de diseño en todos los paradigmas de programación, su identificación es valiosa en cada contexto y se utilizan mucho en la práctica profesional, el enfoque principal de este documento estará en los patrones desarrollados y aplicados en la programación orientada a objetos ("OOP"), ya que es el ámbito donde estos han sido formalizados, documentados y utilizados más extensamente en la literatura.

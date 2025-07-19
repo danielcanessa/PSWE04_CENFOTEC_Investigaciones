@@ -1,0 +1,208 @@
+# Clasificación clásica de patrones de diseño
+
+La clasificación clásica de los patrones de diseño en software fue establecida por la llamada “Banda de los Cuatro” ("Gang of Four" o "GoF") en su libro *Design Patterns: Elements of Reusable Object-Oriented Software* [@gamma1994design]. En este libro, los autores describen 23 patrones fundamentales para la programación orientada a objetos, agrupando los patrones en creacionales, estructurales y de comportamiento.
+
+## 1. Patrones creacionales
+
+Estos patrones abordan la forma en que los objetos se crean, permitiendo mayor flexibilidad y control sobre la instancia de clases.
+
+### Singleton
+
+- **Propósito:** garantizar que una clase tenga solo una instancia a lo largo del ciclo de vida de la aplicación y ofrecer un punto global de acceso a ella.  
+- **Beneficios:** asegura el control centralizado de recursos y evita inconsistencias por múltiples instancias.  
+- **Contexto de uso:** ideal para gestores de configuración, controladores de acceso a base de datos, registros de logs o recursos compartidos.  
+- **Ejemplo:** Un "GestorDeConfiguración" único para toda la aplicación.
+
+### Factory Method
+
+- **Propósito:** definir una interfaz para crear un objeto, pero delegar a las subclases la decisión sobre qué clase concreta instanciar.  
+- **Beneficios:** permite que el sistema sea flexible y extensible, evitando acoplarse a clases concretas y facilitando la sustitución o extensión de creadores.  
+- **Contexto de uso:** cuando la creación de objetos depende de la lógica o datos que sólo se conocen en tiempo de ejecución, o para desacoplar código cliente de implementaciones concretas.  
+- **Ejemplo:** Un método `crearNotificador()` que devuelve instancias de "NotificadorCorreo" o "NotificadorSMS" según configuración.
+
+### Abstract Factory
+
+- **Propósito:** proveer una interfaz para crear familias de objetos relacionados (por ejemplo, botones y menús) sin especificar las clases concretas que se van a utilizar.  
+- **Beneficios:** asegura la coherencia entre productos de la misma familia y permite cambiar toda la familia de objetos fácilmente.  
+- **Contexto de uso:** sistemas multiplataforma, o cuando el sistema debe ser independiente de cómo se crean, componen y representan los productos.  
+- **Ejemplo:** Una fábrica de interfaces gráficas que puede crear componentes (botón, menú, ventana) para Windows o para Linux.
+
+### Builder
+
+- **Propósito:** separar la construcción de un objeto complejo de su representación final, permitiendo crear diferentes variantes de un mismo objeto mediante un proceso de construcción paso a paso.  
+- **Beneficios:** facilita la creación de objetos complejos con múltiples opciones, mejorando la legibilidad y la gestión de dependencias internas.  
+- **Contexto de uso:** objetos que requieren configuración detallada o composición de partes, como documentos, reportes o automóviles.  
+- **Ejemplo:** Un "ConstructorDeReporte" que permite armar reportes personalizados agregando secciones a voluntad.
+
+### Prototype
+
+- **Propósito:** crear nuevos objetos a partir de la clonación de una instancia prototipo existente, en vez de crear nuevos desde cero.  
+- **Beneficios:** agiliza la creación de objetos complejos o costosos, y permite copiar configuraciones fácilmente.  
+- **Contexto de uso:** juegos, editores gráficos, o cuando la creación de un objeto es costosa en tiempo o recursos y conviene copiar un modelo existente.  
+- **Ejemplo:** Una instancia de "Figura" (círculo, rectángulo) que se clona para crear nuevas figuras similares.
+
+## 2. Patrones estructurales
+
+Estos patrones facilitan la composición de clases y objetos para formar estructuras más grandes y flexibles.
+
+### Adapter
+
+- **Propósito:** permitir la colaboración entre clases con interfaces incompatibles, transformando la interfaz de una clase en otra esperada por el cliente.  
+- **Beneficios:** posibilita el uso de clases existentes en nuevos contextos sin modificar su código.  
+- **Contexto de uso:** integración de sistemas antiguos con sistemas nuevos, o integración de librerías externas con la aplicación.  
+- **Ejemplo:** Un adaptador que convierte la salida de una API de pagos para que sea compatible con la interfaz interna del sistema.
+
+### Bridge
+
+- **Propósito:** separar una abstracción de su implementación, permitiendo que ambas evolucionen de forma independiente.  
+- **Beneficios:** reduce el acoplamiento entre jerarquías de abstracción e implementación, facilita la extensión y el mantenimiento.  
+- **Contexto de uso:** sistemas que requieren combinar múltiples variantes de una abstracción y múltiples variantes de implementación, sin multiplicar clases.  
+- **Ejemplo:** Un sistema de documentos ("Documento") que puede combinarse con diferentes formas de exportar ("ExportadorPDF", "ExportadorHTML"), permitiendo nuevas combinaciones sin modificar el resto del sistema.
+
+### Composite
+
+- **Propósito:** componer objetos en estructuras de árbol para representar jerarquías parte-todo, permitiendo que los clientes traten objetos simples y compuestos de manera uniforme.  
+- **Beneficios:** simplifica el código cliente, permite operaciones recursivas y jerarquías complejas.  
+- **Contexto de uso:** menús de aplicaciones, sistemas de archivos, estructuras gráficas o de organización.  
+- **Ejemplo:** Un menú de sistema con opciones simples y submenús, tratados todos como "ElementoMenu".
+
+### Decorator
+
+- **Propósito:** añadir responsabilidades adicionales a un objeto de manera dinámica, sin modificar la clase original.  
+- **Beneficios:** permite agregar funcionalidades a objetos individuales de forma flexible, favoreciendo la composición sobre la herencia.  
+- **Contexto de uso:** cuando se requieren combinaciones dinámicas de funcionalidades, como agregar cifrado, compresión o logs a una clase base.  
+- **Ejemplo:** Un "NotificadorConEncriptación" que extiende un "Notificador" agregando cifrado antes de enviar mensajes.
+
+### Facade
+
+- **Propósito:** proporcionar una interfaz unificada y simplificada a un conjunto de interfaces de un subsistema complejo.  
+- **Beneficios:** reduce la complejidad y el acoplamiento del sistema, facilitando el uso de subsistemas.  
+- **Contexto de uso:** aplicaciones con muchos módulos o APIs complejas, donde conviene simplificar la interacción para el cliente.  
+- **Ejemplo:** Una "FachadaBancaria" que expone métodos simples para operaciones bancarias y oculta la lógica interna de cuentas, tarjetas y préstamos.
+
+### Flyweight
+
+- **Propósito:** reducir el consumo de memoria compartiendo partes de objetos entre muchas instancias, cuando estas comparten datos en común.  
+- **Beneficios:** eficiencia y escalabilidad en sistemas con gran cantidad de objetos similares.  
+- **Contexto de uso:** edición de texto, juegos, gráficos vectoriales donde se crean muchos objetos ligeros.  
+- **Ejemplo:** Objetos "Caracter" que comparten la misma representación de letra en diferentes posiciones de un documento.
+
+### Proxy
+
+- **Propósito:** proporcionar un representante o intermediario para controlar el acceso a otro objeto, gestionando su creación, acceso o protección.  
+- **Beneficios:** controla acceso remoto, carga diferida, protección y registro.  
+- **Contexto de uso:** control de acceso a recursos, optimización de cargas pesadas, proxies de red.  
+- **Ejemplo:** Un "ProxyImagen" que gestiona la carga de una imagen desde disco sólo cuando se necesita mostrarla.
+
+## 3. Patrones de comportamiento
+
+Estos patrones se enfocan en cómo los objetos interactúan y distribuyen responsabilidades.
+
+### Chain of Responsibility
+
+- **Propósito:** evitar el acoplamiento entre el emisor y el receptor de una petición, pasando la solicitud por una cadena de objetos hasta que uno la maneje.  
+- **Beneficios:** flexibilidad para agregar, quitar o reordenar manejadores en tiempo de ejecución.  
+- **Contexto de uso:** validaciones en formularios, procesamiento de eventos, sistemas de soporte o autorización.  
+- **Ejemplo:** Una cadena de objetos de validación de entrada para un formulario de usuario.
+
+### Command
+
+- **Propósito:** encapsular una solicitud como un objeto, permitiendo parametrizar clientes con diferentes operaciones, almacenar operaciones y soportar deshacer/rehacer.  
+- **Beneficios:** desacopla quien solicita la acción de quien la ejecuta, permite colas de comandos y operaciones deshacer.  
+- **Contexto de uso:** menús, barras de herramientas, sistemas con operaciones que pueden programarse o deshacerse.  
+- **Ejemplo:** Un comando "GuardarDocumento" ejecutable y reversible en un editor de texto.
+
+### Interpreter
+
+- **Propósito:** definir una representación y un intérprete para el lenguaje de un dominio específico ("DSL").  
+- **Beneficios:** facilita la construcción de analizadores o ejecutores de lenguajes simples.  
+- **Contexto de uso:** interpretación de comandos, procesamiento de expresiones matemáticas, reglas de negocio.  
+- **Ejemplo:** Un intérprete que evalúa expresiones aritméticas ingresadas por el usuario.
+
+### Iterator
+
+- **Propósito:** proporcionar una manera estándar de recorrer una colección de objetos sin exponer su estructura interna.  
+- **Beneficios:** separa el recorrido de la lógica interna, permite múltiples tipos de recorridos.  
+- **Contexto de uso:** listas, árboles, colecciones complejas.  
+- **Ejemplo:** Un "IteradorDeLista" que permite recorrer los elementos de una lista de clientes.
+
+### Mediator
+
+- **Propósito:** centralizar la comunicación entre objetos para reducir dependencias directas y simplificar la interacción.  
+- **Beneficios:** disminuye el acoplamiento y mejora la modularidad del sistema.  
+- **Contexto de uso:** interfaces gráficas, sistemas donde muchos objetos se comunican entre sí.  
+- **Ejemplo:** Un "MediadorChat" que coordina el envío de mensajes entre usuarios en una sala de chat.
+
+### Memento
+
+- **Propósito:** capturar y almacenar el estado interno de un objeto para poder restaurarlo más tarde, sin violar el encapsulamiento.  
+- **Beneficios:** permite deshacer cambios y restaurar estados anteriores de forma segura.  
+- **Contexto de uso:** editores, sistemas de juego, historial de cambios en documentos.  
+- **Ejemplo:** Un "MementoDocumento" que almacena versiones previas del documento.
+
+### Observer
+
+- **Propósito:** establecer una relación de dependencia uno-a-muchos, de modo que cuando el objeto observado cambia, notifica automáticamente a sus observadores.  
+- **Beneficios:** promueve el bajo acoplamiento y facilita la extensión de funcionalidad.  
+- **Contexto de uso:** sistemas de eventos, interfaces de usuario, modelos "pub/sub".  
+- **Ejemplo:** Un "SensorDeTemperatura" que notifica a varias pantallas cuando la temperatura cambia.
+
+### State
+
+- **Propósito:** permitir que un objeto cambie su comportamiento cuando su estado interno cambia, comportándose como si fuera de otra clase.  
+- **Beneficios:** organiza los comportamientos dependientes del estado, evitando condicionales complejos.  
+- **Contexto de uso:** máquinas de estados, flujos de trabajo, sistemas con diferentes modos operativos.  
+- **Ejemplo:** Un objeto "Semáforo" que alterna entre los estados de “verde”, “amarillo” y “rojo”, cambiando su comportamiento según su estado actual.
+
+### Strategy
+
+- **Propósito:** definir una familia de algoritmos, encapsular cada uno y hacerlos intercambiables, permitiendo que el algoritmo varíe independientemente del cliente.  
+- **Beneficios:** favorece el código flexible y la selección dinámica de algoritmos.  
+- **Contexto de uso:** algoritmos de ordenamiento, cálculos tributarios, estrategias de juego.  
+- **Ejemplo:** Un "CalculadorDeDescuento" que selecciona la estrategia de cálculo adecuada según el tipo de cliente.
+
+### Template Method
+
+- **Propósito:** definir el esqueleto de un algoritmo, dejando que algunos pasos sean implementados por subclases.  
+- **Beneficios:** promueve la reutilización de código y la personalización controlada.  
+- **Contexto de uso:** procesos que tienen una estructura fija con pasos variables.  
+- **Ejemplo:** Una clase "ProcesadorDeArchivo" que define el proceso general de lectura y procesamiento, permitiendo que subclases definan cómo procesar cada línea.
+
+### Visitor
+
+- **Propósito:** separar una operación de la estructura de objetos sobre la que opera, permitiendo añadir nuevas operaciones sin modificar las clases de esos objetos.  
+- **Beneficios:** facilita la adición de funcionalidades y el mantenimiento del sistema.  
+- **Contexto de uso:** recorridos de estructuras de datos, análisis sintáctico, operaciones sobre árboles o colecciones heterogéneas.  
+- **Ejemplo:** Un visitante que recorre un sistema de archivos y calcula el tamaño total de todos los archivos.
+
+# Otros patrones de diseño reconocidos
+
+Además de los patrones clásicos de "GoF", la literatura y la práctica profesional han documentado otros patrones de diseño ampliamente utilizados, que resuelven problemas comunes en la construcción y mantenimiento de sistemas de software.
+
+### Null Object [@buschmann1996pattern]
+
+- **Propósito:** eliminar la necesidad de comprobaciones explícitas de valores nulos, implementando un objeto “vacío” que cumple la interfaz requerida sin realizar ninguna acción.  
+- **Beneficios:** simplifica el código cliente, evita errores por referencias nulas ("null pointer exceptions"), y mejora la robustez y legibilidad.  
+- **Contexto de uso:** cuando es común que un objeto pueda estar ausente, y se desea evitar condicionales repetidos o comportamientos especiales para el caso nulo.  
+- **Ejemplo:** En un sistema de notificaciones, si no hay un notificador activo, se puede usar un objeto "NotificadorNulo" que implementa la interfaz de notificación pero no realiza ninguna acción al llamar al método "enviar()".
+
+### Object Pool [@buschmann1996pattern]
+
+- **Propósito:** gestionar y reutilizar un conjunto de objetos costosos de crear, manteniéndolos en un “pool” y sirviéndolos a los clientes según demanda.  
+- **Beneficios:** reduce la sobrecarga de instanciación y destrucción repetitiva de objetos, mejora el rendimiento y la utilización de recursos.  
+- **Contexto de uso:** conexiones a bases de datos, hilos, buffers, o cualquier recurso cuyo costo de creación sea significativo.  
+- **Ejemplo:** Un pool de conexiones a la base de datos que entrega instancias disponibles y las reutiliza cuando se liberan.
+
+### Dependency Injection [@fowler2004ioc]
+
+- **Propósito:** desacoplar la creación y la gestión de dependencias de los objetos, delegando su provisión a un contenedor externo o al propio framework.  
+- **Beneficios:** favorece la inyección de diferentes implementaciones, mejora la testabilidad, facilita la configuración y la extensión del sistema.  
+- **Contexto de uso:** sistemas grandes con múltiples dependencias, frameworks modernos como "Spring", "Angular" o ".NET Core".  
+- **Ejemplo:** Un servicio de autenticación recibe un repositorio de usuarios por inyección, lo que permite sustituirlo fácilmente por un repositorio de pruebas en los tests.
+
+### Specification [@evans2004ddd]
+
+- **Propósito:** encapsular criterios de selección, validación o filtrado en objetos “especificación”, que pueden combinarse y reutilizarse.  
+- **Beneficios:** mejora la claridad y flexibilidad de las reglas de negocio, favorece la reutilización y la composición de criterios complejos.  
+- **Contexto de uso:** validación de reglas de negocio, filtros en consultas, construcción de criterios dinámicos.  
+- **Ejemplo:** Un objeto "EspecificacionClienteVIP" define el criterio para identificar clientes VIP; puede combinarse con otras especificaciones para consultas más complejas.

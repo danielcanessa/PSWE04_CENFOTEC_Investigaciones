@@ -1,0 +1,105 @@
+# Patrones de diseño más allá de "GoF"
+
+Si bien los patrones de diseño clásicos definidos por Gamma et al. ("GoF") [@gamma1994design] han sido fundamentales para el desarrollo orientado a objetos, el avance de la tecnología, la complejidad de los sistemas y la diversidad de paradigmas han impulsado la aparición de nuevos patrones que atienden desafíos actuales como la escalabilidad, integración, resiliencia y adaptabilidad.
+
+## 1. Patrones arquitectónicos
+
+Estos patrones resuelven problemas recurrentes en la estructura global y la organización de sistemas de software, operando en un nivel de abstracción superior al de los patrones de diseño clásicos. Mientras estos últimos se centran en la colaboración entre clases y objetos dentro de componentes individuales, los arquitectónicos abordan la disposición de módulos principales, su comunicación y la facilitación de escalabilidad y mantenimiento a nivel de todo el sistema [@gamma1994design, @buschmann1996pattern].
+
+A continuación, se describen algunos de los patrones arquitectónicos más relevantes en el desarrollo de software moderno:
+
+### MVC ("Modelo-Vista-Controlador") [@buschmann1996pattern]
+
+- **Propósito:** separar la lógica de negocio, la interfaz de usuario y el control de eventos/acciones, facilitando la gestión modular de aplicaciones.  
+- **Beneficios:** promueve el mantenimiento, la reutilización de componentes y el desarrollo en paralelo de distintas partes del sistema.  
+- **Contexto de uso:** aplicaciones web y de escritorio que requieren una clara separación entre presentación y lógica.  
+- **Ejemplo:** En una aplicación de reservas, el modelo gestiona los datos de las reservas, la vista muestra las fechas y horarios, y el controlador procesa las acciones del usuario.
+
+### Microservicios [@newman2015building]
+
+- **Propósito:** organizar una aplicación como un conjunto de servicios pequeños, independientes y desplegables de manera autónoma.  
+- **Beneficios:** facilita la escalabilidad horizontal, la resiliencia y la evolución independiente de los distintos servicios; favorece equipos autónomos.  
+- **Contexto de uso:** sistemas con alta demanda de escalabilidad y despliegue frecuente, como plataformas de streaming, banca digital o comercio electrónico.  
+- **Ejemplo:** Un sistema de compras online donde la gestión de productos, pagos y envíos se realiza mediante servicios independientes que se comunican vía API.
+
+### Microkernel ("Plug-in") [@buschmann1996pattern]
+
+- **Propósito:** permitir la extensión dinámica de funcionalidades mediante módulos o "plug-ins" sobre un núcleo central.  
+- **Beneficios:** posibilita adaptar o ampliar el sistema sin modificar el núcleo ni detener su operación; fomenta la extensibilidad y personalización.  
+- **Contexto de uso:** aplicaciones extensibles como editores de texto, IDEs o servidores de aplicaciones.  
+- **Ejemplo:** Un editor de texto al que se pueden agregar "plug-ins" para soporte de nuevos lenguajes o funciones avanzadas.
+
+## 2. Patrones de integración
+
+En sistemas distribuidos y arquitecturas modernas, los patrones de integración abordan problemas de comunicación, coordinación y sincronización entre componentes heterogéneos, frecuentemente implementados en distintas plataformas o tecnologías. Estos patrones facilitan la interoperabilidad, la escalabilidad y la consistencia de los datos a través de soluciones probadas para la transferencia y procesamiento de mensajes, comandos y eventos [@hohpe2003enterprise].
+
+### Broker [@hohpe2003enterprise]
+
+- **Propósito:** centralizar y gestionar la comunicación entre componentes distribuidos, actuando como intermediario para desacoplar emisores y receptores.  
+- **Beneficios:** facilita la escalabilidad, la gestión de mensajes y la interoperabilidad entre sistemas heterogéneos.  
+- **Contexto de uso:** integración de aplicaciones empresariales, middleware, sistemas distribuidos.  
+- **Ejemplo:** Un sistema financiero donde los servicios de cuentas, pagos y notificaciones interactúan a través de un broker de mensajes como "Kafka".
+
+### Event Sourcing [@fowler2005eventsourcing]
+
+- **Propósito:** almacenar todos los cambios de estado de un sistema como eventos inmutables, en vez de solo guardar el estado actual.  
+- **Beneficios:** permite trazabilidad completa, deshacer acciones, reconstruir el estado histórico y facilita la auditoría.  
+- **Contexto de uso:** aplicaciones con requerimientos de auditoría, historial o reversión, como sistemas de órdenes, logística o control de inventario.  
+- **Ejemplo:** Un sistema de pedidos que registra cada creación, modificación y cancelación como eventos, permitiendo reconstruir el historial completo de un pedido.
+
+### CQRS ("Command Query Responsibility Segregation") [@fowler2005eventsourcing]
+
+- **Propósito:** separar los modelos para comandos (escritura) y consultas (lectura) para optimizar el rendimiento y la escalabilidad.  
+- **Beneficios:** especialización y optimización de los modelos, mejoras en el rendimiento y la seguridad, escalabilidad independiente de lectura y escritura.  
+- **Contexto de uso:** sistemas donde las operaciones de consulta y actualización tienen diferentes requisitos de rendimiento o escalabilidad, como plataformas de comercio electrónico.  
+- **Ejemplo:** Un sistema de ventas con una base de datos para registrar compras y otra, optimizada para reportes y consultas rápidas.
+
+## 3. Patrones para la nube y sistemas distribuidos
+
+Las arquitecturas "cloud" y los sistemas distribuidos modernos presentan nuevos retos en cuanto a resiliencia, descubrimiento de servicios, balanceo de carga y tolerancia a fallos. Los siguientes patrones permiten abordar estos desafíos, facilitando la operación confiable y escalable de aplicaciones en la nube y entornos distribuidos [@newman2015building, @nygard2007release].
+
+### Circuit Breaker [@nygard2007release]
+
+- **Propósito:** proteger a un sistema de llamadas repetidas a servicios fallidos, evitando la sobrecarga y permitiendo una recuperación controlada.  
+- **Beneficios:** mejora la resiliencia y estabilidad general, evita cascadas de fallos en sistemas distribuidos.  
+- **Contexto de uso:** arquitecturas de microservicios, servicios que dependen de recursos externos o APIs poco confiables.  
+- **Ejemplo:** Una aplicación que detecta que el sistema de pagos externo está caído y, temporalmente, deja de enviar solicitudes para evitar saturar el sistema.
+
+### API Gateway [@newman2015building]
+
+- **Propósito:** centralizar el acceso a múltiples servicios de backend a través de un punto de entrada único.  
+- **Beneficios:** simplifica la gestión de autenticación, control de tráfico, transformación de mensajes y monitoreo de servicios; mejora la experiencia de clientes.  
+- **Contexto de uso:** arquitecturas de microservicios y aplicaciones móviles/web que consumen múltiples servicios internos.  
+- **Ejemplo:** Un "API Gateway" que recibe solicitudes de apps móviles y las distribuye a servicios internos de usuarios, productos y pedidos.
+
+### Service Discovery [@newman2015building]
+
+- **Propósito:** permitir que los servicios encuentren y se comuniquen automáticamente entre sí en entornos dinámicos y escalables.  
+- **Beneficios:** facilita el escalado, la actualización de servicios y la tolerancia a fallos sin intervención manual.  
+- **Contexto de uso:** orquestadores de contenedores ("Kubernetes", "Docker Swarm"), sistemas con servicios que cambian de ubicación frecuentemente.  
+- **Ejemplo:** En "Kubernetes", los servicios se descubren dinámicamente a través de DNS interno y etiquetas, sin configuración manual de direcciones IP.
+
+## 4. Patrones idiomáticos de lenguajes modernos
+
+Algunos lenguajes y plataformas han dado lugar a patrones específicos que explotan sus capacidades particulares, promoviendo soluciones idiomáticas que aprovechan las ventajas del lenguaje y su ecosistema [@donovan2016go].
+
+### Channels ("Go") [@donovan2016go]
+
+- **Propósito:** facilitar la comunicación segura y concurrencia entre procesos ("goroutines") mediante el paso de mensajes.  
+- **Beneficios:** elimina muchos problemas asociados a "locks" y condiciones, promoviendo un modelo seguro y fácil de entender.  
+- **Contexto de uso:** aplicaciones concurrentes y paralelas escritas en "Go", procesamiento en tiempo real.  
+- **Ejemplo:** Una aplicación web en "Go" usa canales para enviar tareas desde el servidor HTTP a los workers que las procesan en paralelo.
+
+### Option/Result ("Rust") [@klabnik2018rust]
+
+- **Propósito:** gestionar el manejo seguro de valores opcionales (que pueden o no estar presentes) y el control explícito de errores sin usar excepciones.  
+- **Beneficios:** promueve código seguro y robusto, obliga al programador a manejar casos de error o ausencia de valores.  
+- **Contexto de uso:** desarrollo en "Rust", especialmente en funciones que pueden fallar o devolver valores nulos.  
+- **Ejemplo:** En "Rust", una función que puede devolver un valor o no ("Option<T>") o que puede fallar ("Result<T, E>"), forzando al programador a manejar ambos casos.
+
+### Promise/Async Await ("JavaScript", "Python", "C#") [@crockford2008javascript]
+
+- **Propósito:** manejar operaciones asincrónicas de forma legible y controlada, evitando el “callback hell”.  
+- **Beneficios:** facilita la programación reactiva y el trabajo con operaciones I/O, redes o temporizadores.  
+- **Contexto de uso:** desarrollo web frontend y backend, aplicaciones que requieren concurrencia y manejo de múltiples eventos.  
+- **Ejemplo:** Una función en "JavaScript" utiliza "async" y "await" para esperar la respuesta de una API antes de continuar con la ejecución.
