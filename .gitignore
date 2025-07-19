@@ -1,0 +1,22 @@
+# macOS system files
+.DS_Store
+
+# Quarto autogenerados y temporales en cualquier carpeta
+.quarto/
+_book/
+quarto-session-temp*/
+
+# Archivos JSON temporales de Quarto en cualquier lugar
+**/*.qmd.json
+
+# Archivos temporales comunes de LaTeX (si usas)
+*.aux
+*.log
+*.out
+*.toc
+*.fls
+*.fdb_latexmk
+
+# Configuraciones locales de editores
+.vscode/
+.idea/
