@@ -1,0 +1,8 @@
+---
+lang: es
+---
+
+
+# Abstract {.unnumbered}
+
+Este documento presenta un análisis estructurado de los modelos de inteligencia artificial (IA), abarcando desde sus fundamentos teóricos y principales tipos hasta el papel central de los modelos fundacionales en el estado del arte actual. Se examinan las aplicaciones más relevantes de la IA en ámbitos como la visión por computador, el procesamiento de lenguaje natural, la salud, las finanzas y la educación, así como los desafíos, riesgos y limitaciones asociados a su desarrollo y adopción. Finalmente, se discuten las tendencias emergentes y las perspectivas futuras del campo, poniendo especial énfasis en su impacto social y laboral, y en la necesidad de promover una inteligencia artificial ética, explicable y orientada al beneficio colectivo.

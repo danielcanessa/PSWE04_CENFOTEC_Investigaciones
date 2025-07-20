@@ -1,0 +1,23 @@
+# Desafíos, limitaciones y riesgos
+
+A pesar de los grandes avances de la inteligencia artificial y los modelos fundacionales, existen importantes desafíos y riesgos que deben considerarse en su desarrollo y adopción [@bommasani2021opportunities; @russell2010inteligencia]:
+
+- **Sesgo y discriminación:** Los modelos pueden perpetuar o incluso amplificar sesgos presentes en los datos de entrenamiento, lo que puede llevar a decisiones injustas o resultados discriminatorios en ámbitos como la salud o la contratación [@bommasani2021opportunities].
+- **Explicabilidad y transparencia:** Muchos modelos modernos, especialmente los basados en "deep learning", funcionan como “cajas negras”, dificultando la comprensión de cómo se toman las decisiones y limitando su adopción en sectores regulados o críticos [@goodfellow2016deep].
+- **Privacidad y seguridad de los datos:** El uso de grandes volúmenes de datos personales o sensibles plantea riesgos de privacidad, así como posibles vulnerabilidades ante ataques de manipulación o extracción de información [@bommasani2021opportunities].
+- **Requerimientos computacionales y ecológicos:** El entrenamiento de modelos fundacionales requiere enormes recursos computacionales, lo que implica altos costos económicos y un impacto ambiental considerable debido al consumo energético [@bommasani2021opportunities].
+- **Riesgo de desinformación y mal uso:** Los modelos generativos pueden crear información falsa difícil de distinguir de la real, lo que representa un riesgo para la integridad informativa y la confianza social [@bommasani2021opportunities].
+- **Dependencia tecnológica y concentración de poder:** El desarrollo y control de los modelos más avanzados está en manos de pocas empresas, lo que puede limitar la innovación abierta y aumentar la desigualdad en el acceso a la tecnología [@bommasani2021opportunities].
+
+
+# Perspectivas futuras y tendencias
+
+El campo de la inteligencia artificial y los modelos fundacionales sigue evolucionando rápidamente. Entre las principales tendencias y perspectivas a futuro destacan [@bommasani2021opportunities; @goodfellow2016deep; @russell2010inteligencia]:
+
+- **Avances en modelos multimodales:** Se espera que los modelos sean cada vez más capaces de integrar información de texto, imagen, audio y video, permitiendo aplicaciones más completas y contextuales.
+- **Mayor eficiencia y sostenibilidad:** Habrá un énfasis en el desarrollo de modelos más eficientes, que requieran menos recursos para entrenarse y operar, buscando minimizar el impacto ambiental y ampliar el acceso a la tecnología.
+- **Modelos explicables y auditables:** Crece la demanda de sistemas que permitan entender y controlar mejor las decisiones de la IA, facilitando su uso en áreas sensibles y reguladas.
+- **Personalización y adaptación dinámica:** Los modelos tenderán a adaptarse mejor a contextos locales y necesidades individuales, mejorando la experiencia del usuario y la relevancia de sus aplicaciones.
+- **Colaboración humano-IA:** Se espera una integración más estrecha entre humanos y sistemas inteligentes, donde la IA actúe como herramienta de apoyo y amplificadora de capacidades, más que como reemplazo directo.
+- **Descentralización y democratización de la IA:** Proyectos open-source y modelos más accesibles facilitarán la innovación y el uso responsable en diversos contextos globales.
+- **Fortalecimiento de regulaciones y ética:** Los marcos regulatorios y las consideraciones éticas serán cada vez más relevantes para guiar el desarrollo y despliegue de sistemas de IA seguros, justos y confiables.

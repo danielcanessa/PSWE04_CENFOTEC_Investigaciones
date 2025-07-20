@@ -1,0 +1,365 @@
+# Modelos de inteligencia artificial
+
+Un modelo de inteligencia artificial es un programa que ha sido entrenado con datos para identificar patrones, tomar decisiones o hacer predicciones sin intervención humana directa. Los modelos aplican algoritmos matemáticos a entradas de datos para generar salidas que resuelven tareas específicas, como la clasificación de imágenes, la traducción automática de documentos o la predicción de tendencias [@rouhiainen2018inteligencia; @ibm2024modelo].
+
+La diferencia entre un algoritmo y un modelo es fundamental: los algoritmos son procedimientos, generalmente descritos en lenguaje matemático o pseudocódigo, que se aplican a un conjunto de datos para cumplir una función o propósito determinado; mientras que el modelo es el resultado final de aplicar ese algoritmo al conjunto de datos, es decir, la representación entrenada que toma decisiones o realiza predicciones [@ibm2024modelo].
+
+Existen diferentes formas de clasificar los modelos de IA, según su objetivo, metodología o tipo de salida:
+
+- **Por su enfoque metodológico:**
+  - **Modelos generativos:** pueden crear nuevos datos, como imágenes, textos o música [@ibm2024modelo].
+  - **Modelos discriminativos:** se enfocan en distinguir o clasificar datos entre diferentes categorías, como ocurre en el diagnóstico médico automatizado [@ibm2024modelo].
+
+- **Por la naturaleza de la tarea:**
+  - **Modelos de clasificación:** asignan etiquetas o categorías a los datos, por ejemplo, identificar correos como spam o no spam [@ibm2024modelo].
+  - **Modelos de regresión:** predicen valores numéricos continuos, por ejemplo, estimar precios de viviendas [@ibm2024modelo].
+
+La principal diferencia entre estos enfoques radica en cómo los modelos representan y procesan la relación entre los datos de entrada y salida, así como en el tipo de problema que buscan resolver.
+
+En años recientes, el desarrollo de modelos fundacionales o preentrenados ha revolucionado el campo. Estos modelos, entrenados con grandes volúmenes de datos, pueden adaptarse a múltiples tareas específicas mediante técnicas de ajuste fino (fine-tuning) [@ibm2024modelo; @bommasani2021opportunities].
+
+Es importante señalar que los criterios de clasificación (objetivo, metodología, tipo de salida, etc) no son excluyentes ni jerárquicos, sino que ofrecen distintas perspectivas sobre cómo abordar el diseño y aplicación de los modelos. En la siguiente sección se cubriran los distintos tipos de modelos.
+
+## Tipos de modelos de inteligencia artificial
+
+Se ha desarrollado una amplia gama de modelos para abordar distintos tipos de problemas. Estos modelos pueden clasificarse de varias maneras, pero a nivel académico, destacan los siguientes enfoques:
+
+### 1. Modelos simbólicos o basados en reglas
+
+**Descripción:**  
+Estos modelos representan el conocimiento mediante reglas lógicas y cadenas de inferencia del tipo “si... entonces...”, permitiendo la automatización de la toma de decisiones en dominios acotados [@russell2010inteligencia].
+
+**Historia y contexto:**  
+Los modelos simbólicos o basados en reglas, también conocidos como “IA simbólica” o sistemas expertos, dominaron la primera etapa de la inteligencia artificial, especialmente entre las décadas de 1960 y 1980. Durante este periodo, la principal aproximación fue intentar representar el conocimiento humano y el razonamiento lógico a través de reglas explícitas y símbolos, lo que llevó al desarrollo de numerosos sistemas expertos para dominios específicos [@russell2010inteligencia].
+
+**Ventajas:** 
+
+* Son fáciles de interpretar y auditar, ya que el razonamiento es explícito [@russell2010inteligencia].
+* Permiten trazabilidad total en la toma de decisiones [@russell2010inteligencia].
+* Son útiles en dominios cerrados o donde el conocimiento es completamente explícito [@russell2010inteligencia].
+
+**Limitaciones:**  
+
+* No aprenden de los datos, dependen del conocimiento explícito programado por expertos, lo que genera un cuello de botella [@russell2010inteligencia].
+* Tienen dificultades para escalar a dominios complejos, pues el número de reglas puede crecer exponencialmente [@russell2010inteligencia].
+* Son poco flexibles ante nuevos problemas no previstos y tienen dificultades para manejar información incompleta [@russell2010inteligencia].
+
+**Desarrollo posterior:**  
+Aunque la popularidad de los sistemas simbólicos ha disminuido con el auge del aprendizaje automático, siguen siendo relevantes en ciertas aplicaciones industriales, legales y de control, y han sido integrados en sistemas híbridos que combinan reglas explícitas con modelos probabilísticos o conexionistas [@russell2010inteligencia].
+
+**Ejemplo:**  
+El sistema experto MYCIN para diagnóstico médico fue un referente en los años 70. Otros ejemplos notables incluyen DENDRAL (análisis químico) y XCON (configuración de sistemas informáticos) [@russell2010inteligencia].
+
+### 2. Modelos conexionistas (Redes neuronales artificiales)
+
+**Descripción:**  
+Estos modelos están inspirados en cómo funciona el cerebro humano. Usan pequeñas unidades llamadas “neuronas artificiales” que se conectan entre sí para procesar información y aprender a partir de ejemplos [@russell2010inteligencia; @goodfellow2016deep].
+
+**Historia y contexto:**  
+Las primeras redes neuronales artificiales se crearon en los años 1950 y 1960. Un modelo famoso de esa época es el perceptrón. Sin embargo, las redes más avanzadas y útiles empezaron a aparecer en los años 1980, cuando se inventaron métodos que permiten entrenar redes con varias capas. En los últimos años, este campo ha crecido mucho gracias al "deep learning", que permite resolver problemas complejos como reconocer imágenes, entender texto o traducir idiomas [@russell2010inteligencia; @goodfellow2016deep].
+
+**Ventajas:**  
+
+* Son muy buenas para reconocer patrones y encontrar relaciones en datos como imágenes, sonidos o textos [@russell2010inteligencia; @goodfellow2016deep].
+* Pueden aprender a partir de muchos ejemplos y luego aplicar ese aprendizaje a situaciones nuevas, siempre que los datos de entrenamiento sean variados y representativos [@goodfellow2016deep].
+* Funcionan bien en problemas donde hay muchos datos disponibles.
+
+**Limitaciones:**  
+
+* Necesitan muchos datos y potencia de cómputo para entrenarse bien [@goodfellow2016deep].
+* Son modelos difíciles de entender por dentro, porque no se puede saber exactamente cómo llegan a una decisión. Esto puede ser un problema en áreas donde es importante explicar el motivo de cada decisión, como en la medicina o las finanzas [@goodfellow2016deep].
+* Si el modelo es demasiado complejo para la cantidad de datos que se tiene, puede aprender detalles innecesarios y equivocarse al enfrentarse a nuevos casos [@russell2010inteligencia].
+
+**Desarrollo posterior:**  
+Las redes neuronales han dado lugar a muchos tipos de modelos. Por ejemplo, las redes convolucionales (CNN) se usan para analizar imágenes y las redes recurrentes (RNN) para trabajar con datos en secuencia, como texto o audio. Más recientemente, modelos como los transformers han hecho posible grandes avances en procesamiento de lenguaje natural y otras áreas [@goodfellow2016deep].
+
+**Ejemplo:**  
+Las redes neuronales convolucionales (CNN) permiten que los celulares reconozcan caras en fotos. Las redes recurrentes (RNN) se usan para el reconocimiento de voz y la traducción automática de textos. Los transformers están detrás de sistemas como ChatGPT [@goodfellow2016deep].
+
+
+
+### 3. Modelos probabilísticos
+
+**Descripción:**  
+Estos modelos usan la estadística y las probabilidades para tomar decisiones cuando hay incertidumbre o información incompleta. Permiten que la inteligencia artificial maneje situaciones donde no se tiene toda la información o donde el estado puede cambiar [@russell2010inteligencia; @bishop2006pattern].
+
+**Historia y contexto:**  
+Los modelos probabilísticos comenzaron a usarse en inteligencia artificial cuando se vio que las reglas y la lógica no eran suficientes para tratar con el mundo real (este es incierto y muchas veces impredecible). Por eso, se empezaron a aplicar técnicas de probabilidad y estadística para ayudar a las máquinas a razonar bajo incertidumbre [@russell2010inteligencia].
+
+**Ventajas:**  
+
+* Pueden combinar conocimiento previo (por ejemplo, experiencias pasadas) con nueva información [@russell2010inteligencia; @bishop2006pattern].
+* Son muy útiles en tareas como diagnóstico médico, donde a veces no se tienen todos los datos [@russell2010inteligencia].
+* Permiten calcular qué tan probable es que ocurra algo, y tomar decisiones con base en esas probabilidades [@bishop2006pattern].
+
+**Limitaciones:**  
+
+* Los modelos complejos pueden ser difíciles de construir y requieren muchos datos para ajustar bien sus parámetros [@bishop2006pattern].
+* No siempre es fácil obtener las probabilidades exactas necesarias para el modelo [@russell2010inteligencia].
+* Su rendimiento puede bajar si los datos son muy ruidosos o poco representativos [@russell2010inteligencia].
+
+**Desarrollo posterior:**  
+Se han creado muchos tipos de modelos probabilísticos, como las redes bayesianas y los modelos ocultos de Markov. Estos se usan en áreas como reconocimiento de voz, diagnóstico de enfermedades y análisis de texto [@bishop2006pattern].
+
+**Ejemplo:**  
+Una red bayesiana puede ayudar a un médico a estimar la probabilidad de una enfermedad, tomando en cuenta síntomas observados y experiencias previas. Los modelos ocultos de Markov se utilizan, por ejemplo, en el reconocimiento de voz para determinar qué palabras está diciendo una persona [@russell2010inteligencia; @bishop2006pattern].
+
+### 4. Modelos evolutivos
+
+**Descripción:**  
+Estos modelos imitan el proceso de la evolución natural. Utilizan técnicas como la selección, la combinación y la mutación de soluciones para encontrar la mejor respuesta a un problema. En lugar de buscar una única solución desde el principio, generan muchas posibles soluciones y mejoran a través de ciclos de “prueba y error” [@russell2010inteligencia].
+
+**Historia y contexto:**  
+Los modelos evolutivos surgieron inspirados por las ideas de Charles Darwin sobre la evolución y la selección natural. Se han usado desde la década de 1960 en la inteligencia artificial, especialmente para resolver problemas de optimización en los que otras técnicas no funcionan bien [@russell2010inteligencia].
+
+**Ventajas:**  
+
+* Son muy buenos para buscar soluciones óptimas en problemas complejos o donde hay muchas variables posibles [@russell2010inteligencia].
+* No requieren que el problema tenga una fórmula matemática clara o sencilla [@russell2010inteligencia].
+* Pueden adaptarse a cambios en el entorno o en los requisitos del problema [@russell2010inteligencia].
+
+**Limitaciones:**  
+
+* El proceso puede ser lento y requerir mucho poder de cómputo, ya que se prueban muchas soluciones (similar al "backtracking") [@russell2010inteligencia].
+* No siempre garantizan encontrar la mejor solución posible, solo una solución “suficientemente buena” [@russell2010inteligencia].
+* El resultado puede depender mucho de cómo se define el proceso de selección y mutación [@russell2010inteligencia].
+
+**Desarrollo posterior:**  
+Con el tiempo, los modelos evolutivos se han combinado con otras técnicas de inteligencia artificial, como redes neuronales o modelos probabilísticos, para aprovechar las ventajas de ambos enfoques. Se siguen utilizando en la optimización de diseños, la ingeniería y la generación automática de soluciones [@russell2010inteligencia].
+
+**Ejemplo:**  
+Los algoritmos genéticos, que simulan el cruce y la mutación de genes, se emplean para encontrar la mejor forma de diseñar un circuito electrónico, planificar rutas de transporte, o resolver rompecabezas complejos [@russell2010inteligencia].
+
+### 5. Modelos de aprendizaje automático (Machine Learning)
+
+**Descripción:**  
+Los modelos de aprendizaje automático pueden aprender a partir de los datos, sin necesidad de que una persona les programe todas las reglas. Su objetivo es mejorar en una tarea específica utilizando ejemplos previos o experiencias pasadas [@russell2010inteligencia; @bishop2006pattern].
+
+**Historia y contexto:**  
+El aprendizaje automático comenzó a desarrollarse como una forma de que las computadoras pudieran reconocer patrones y tomar decisiones por sí mismas, no solo siguiendo instrucciones fijas. Ha crecido mucho gracias al aumento de datos disponibles y la mejora en la potencia de cómputo. Hoy en día, machine learning es central en aplicaciones como motores de búsqueda, reconocimiento de voz y recomendaciones personalizadas [@russell2010inteligencia].
+
+**Ventajas:**  
+
+* Se adaptan y mejoran a medida que procesan más datos [@bishop2006pattern].
+* Permiten resolver problemas complejos donde sería muy difícil o imposible escribir reglas manualmente.
+* Son versátiles, ya que pueden aplicarse en tareas de clasificación, predicción, agrupamiento y detección de patrones [@bishop2006pattern].
+
+**Limitaciones:** 
+
+* Requieren datos de buena calidad y en cantidad suficiente para aprender correctamente.
+* Si los datos están sesgados, el modelo puede aprender esos sesgos y cometer errores [@bishop2006pattern].
+* Los modelos complejos pueden ser difíciles de interpretar y explicar, especialmente para quienes no son expertos [@bishop2006pattern].
+
+**Desarrollo posterior:**  
+Existen tres categorías dentro del aprendizaje automático [@russell2010inteligencia; @bishop2006pattern]:
+
+* **Aprendizaje supervisado:** El modelo aprende con datos etiquetados, es decir, cada ejemplo tiene una respuesta correcta. Se usa mucho para clasificación (por ejemplo, saber si un correo es spam o no) y para predecir valores numéricos (regresión).
+* **Aprendizaje no supervisado:** El modelo busca patrones o estructuras en datos sin etiquetas. Se emplea para agrupar datos similares o para reducir la cantidad de variables (reducción de dimensionalidad).
+* **Aprendizaje por refuerzo:** El modelo aprende tomando decisiones, probando diferentes acciones y recibiendo recompensas o castigos. El objetivo es aprender la mejor estrategia posible a largo plazo.
+
+**Ejemplo:**  
+
+* El filtrado de correos electrónicos spam (aprendizaje supervisado).
+* La agrupación de clientes según su comportamiento de compra (aprendizaje no supervisado).
+* Sistemas que aprenden a jugar videojuegos mediante prueba y error (aprendizaje por refuerzo).
+
+### 6. Modelos generativos y discriminativos
+
+**Descripción:**  
+Estos son dos enfoques diferentes para que la inteligencia artificial aprenda a partir de los datos:
+
+* **Modelos generativos:** aprenden a comprender cómo se distribuyen y relacionan los datos de entrada y salida; incluso pueden generar nuevos datos parecidos a los que han visto [@goodfellow2016deep; @bishop2006pattern].
+* **Modelos discriminativos:** se enfocan únicamente en distinguir o clasificar los datos, es decir, en aprender la diferencia entre categorías o clases, sin preocuparse por cómo se generan los datos [@goodfellow2016deep; @bishop2006pattern].
+
+**Historia y contexto:**  
+El concepto de modelos generativos y discriminativos surgió para comparar métodos de aprendizaje automático que pueden, o no, generar nuevos ejemplos.
+
+* Los modelos generativos, como Naive Bayes, existen desde hace mucho y se usaban sobre todo en problemas de clasificación de texto. Con el avance del "deep learning", aparecieron modelos generativos capaces de crear imágenes, textos y sonidos.
+* Los modelos discriminativos se popularizaron porque suelen ser más eficaces cuando la tarea es solo clasificar [@goodfellow2016deep].
+
+**Ventajas:**  
+
+* **Generativos:** Permiten crear nuevos datos, pueden funcionar aunque haya pocos ejemplos etiquetados y son útiles para tareas como la generación de imágenes, texto o música [@goodfellow2016deep].
+* **Discriminativos:** Suelen tener mejor rendimiento en tareas de clasificación, ya que se concentran en distinguir entre categorías [@goodfellow2016deep].
+
+**Limitaciones:**  
+
+* **Generativos:** Son más complejos de entrenar y requieren mucho poder de cómputo, especialmente en modelos modernos [@goodfellow2016deep].
+* **Discriminativos:** No pueden generar datos nuevos y dependen de la disponibilidad de ejemplos bien etiquetados [@goodfellow2016deep].
+
+**Desarrollo posterior:**  
+La investigación reciente ha llevado al desarrollo de modelos generativos cada vez más potentes, como los modelos de difusión y las GANs ("Generative Adversarial Networks"), que pueden crear imágenes realistas o textos coherentes. También han surgido modelos que combinan lo mejor de ambos enfoques para aprovechar sus ventajas en diferentes tareas [@goodfellow2016deep].
+
+**Ejemplo:**  
+
+* Un **modelo generativo** como una GAN puede crear imágenes nuevas de personas que no existen [@goodfellow2016deep; @bishop2006pattern].
+* Un **modelo discriminativo** como la regresión logística o una red neuronal profunda puede clasificar correos electrónicos como spam o no spam [@goodfellow2016deep; @bishop2006pattern].
+
+### 7. Modelos fundacionales (Foundation Models)
+
+**Descripción:**  
+Son modelos de aprendizaje profundo que han sido entrenados previamente con grandes cantidades de datos variados (textos, imágenes, audio) y que pueden adaptarse a muchas tareas diferentes mediante ajustes específicos [@bommasani2021opportunities].
+
+**Historia y contexto:**  
+Los modelos fundacionales surgieron en los últimos años como una evolución de los modelos de "deep learning" tradicionales. Antes, se entrenaba un modelo desde cero para cada tarea, ahora, gracias al poder de cómputo y la disponibilidad de datos, se entrena un solo modelo muy grande (como GPT) y luego se adapta a diferentes aplicaciones específicas. Esto ha permitido avances muy rápidos en áreas como el procesamiento de lenguaje natural, la generación de texto y la visión por computador [@bommasani2021opportunities].
+
+**Ventajas:**  
+
+* Son muy versátiles: el mismo modelo puede servir para tareas muy distintas entre sí como resumir textos, responder preguntas, traducir idiomas o generar imágenes [@bommasani2021opportunities].
+* Permiten aprovechar el conocimiento aprendido de millones de ejemplos en múltiples dominios [@bommasani2021opportunities].
+* Pueden alcanzar resultados con menos datos y ajustes para cada tarea específica [@bommasani2021opportunities].
+
+**Limitaciones:**  
+
+* Su entrenamiento inicial requiere una enorme cantidad de recursos computacionales, energía y tiempo [@bommasani2021opportunities].
+* Al ser tan grandes, su funcionamiento interno es difícil de entender [@bommasani2021opportunities].
+* Pueden aprender o amplificar sesgos presentes en los datos de entrenamiento, lo que puede afectar la equidad de sus resultados [@bommasani2021opportunities].
+
+**Desarrollo posterior:**  
+El auge de los modelos fundacionales ha impulsado el desarrollo de nuevas aplicaciones y la integración de IA en productos de uso cotidiano. La tendencia actual es crear modelos aún más grandes y potentes, así como investigar cómo hacerlos más justos, eficientes y explicables.
+
+**Ejemplo:**  
+
+* GPT-4 de OpenAI (que puede generar textos y programar) [@bommasani2021opportunities].
+* Llama de Meta (que puede adaptarse a tareas de lenguaje en muchos idiomas) [@bommasani2021opportunities].
+
+Además, existen enfoques híbridos y emergentes, como los sistemas neuro-simbólicos, que buscan combinar la robustez del razonamiento lógico con la capacidad de aprendizaje de los modelos conexionistas [@russell2010inteligencia].
+
+### Resumen de tipos de modelos
+
+La siguiente tabla resume los distintos tipos de modelos de inteligencia artificial:
+
+| Tipo de modelo                        | Descripción breve                                                      | Ventajas principales                                                        | Limitaciones principales                                                      | Ejemplo destacado                          |
+|----------------------------------------|------------------------------------------------------------------------|-----------------------------------------------------------------------------|--------------------------------------------------------------------------------|---------------------------------------------|
+| Simbólicos / basados en reglas | Usan reglas lógicas explícitas para tomar decisiones                   | Fáciles de interpretar y auditar. Útiles en dominios cerrados               | No aprenden de datos. Difíciles de escalar y poco flexibles                   | MYCIN (diagnóstico médico)                  |
+| Conexionistas (redes neuronales) | Aprenden a partir de ejemplos usando “neuronas” artificiales            | Excelentes en reconocimiento de patrones y manejo de grandes volúmenes de datos | Necesitan muchos datos y cómputo. Difíciles de interpretar (“cajas negras”)   | CNN para reconocimiento de imágenes         |
+| Probabilísticos | Usan la estadística y probabilidad para razonar bajo incertidumbre      | Combinan conocimiento previo y datos nuevos. Útiles en tareas con incertidumbre | Difíciles de construir y ajustar. Requieren estimar probabilidades precisas   | Redes bayesianas en diagnóstico médico      |
+| Evolutivos | Imitan la evolución natural para optimizar soluciones                   | Ideales para problemas complejos o con muchas variables                     | Proceso lento. No garantizan la mejor solución posible                        | Algoritmos genéticos en diseño de circuitos |
+| Aprendizaje automático (ML) | Aprenden patrones automáticamente a partir de datos                     | Se adaptan y mejoran con experiencia. Versátiles en muchas tareas           | Requieren datos de calidad. Pueden aprender sesgos o ser difíciles de explicar| Filtrado de spam en correo electrónico      |
+| Generativos | Aprenden la distribución de los datos y pueden generar ejemplos nuevos  | Permiten crear datos, útiles con pocos ejemplos etiquetados                 | Complejos de entrenar. Requieren mucho cómputo                                 | GANs generando imágenes                     |
+| Discriminativos | Se enfocan en clasificar o distinguir entre categorías                  | Eficaces en clasificación. Suelen requerir menos cómputo                    | No pueden generar datos nuevos. Necesitan datos etiquetados                    | Regresión logística para spam/no spam        |
+| Fundacionales | Modelos preentrenados muy grandes y versátiles para muchas tareas       | Muy versátiles. Aprenden de muchos dominios y tareas                        | Requieren enormes recursos. Difíciles de explicar. Pueden amplificar sesgos   | GPT-4, BERT, Llama                          |
+| Híbridos / emergentes | Combinan diferentes enfoques (ej: reglas + redes neuronales)            | Buscan combinar lo mejor de varios métodos                                  | Pueden ser complejos de diseñar e interpretar                                 | Sistemas neuro-simbólicos                   |
+
+: Tabla 1. Resumen de los principales tipos de modelos de inteligencia artificial.
+
+## Modelos fundacionales: ejemplos y principales aplicaciones
+
+Como se describió en la sección anterior, los **modelos fundacionales** han transformado la inteligencia artificial por su capacidad de aprender de grandes volúmenes de datos y adaptarse a múltiples tareas mediante ajuste fino [@bommasani2021opportunities].
+
+La mayoría de los modelos fundacionales se basan en la arquitectura "transformer", que aporta la capacidad de aprender sobre relaciones complejas utilizando grandes cantidades de datos [@bommasani2021opportunities; @goodfellow2016deep]. Existen varios tipos de arquitectura transformer:
+
+- **Transformer autoregresivo:** En sus salidas genera una palabra (o elemento) a la vez, usando la información previa de la secuencia, por ejemplo: GPT-4.
+- **Transformer bidireccional:** Analiza simultáneamente el contexto previo y posterior de cada palabra, lo que mejora la comprensión del significado en una frase, por ejemplo: BERT.
+- **Transformer multimodal:** Puede procesar diferentes tipos de datos a la vez, como texto, imágenes, audio o video, integrando información de varias fuentes, por ejemplo: Gemini.
+
+A continuación se listan algunos de los modelos fundacionales más importantes de la actualidad:
+
+**1. GPT-4 (OpenAI)**
+
+- **Categoría:** Lenguaje natural generativo
+- **Descripción:** Modelo avanzado especializado en la generación y comprensión de texto, capaz de responder preguntas, traducir, resumir y programar en varios lenguajes.
+- **Tipo de arquitectura:** Transformer autoregresivo
+- **¿Código abierto?:** No
+- **Versiones principales:** GPT-1, 2, 3, 3.5, 4
+- **Año:** 2023
+- **Referencia:** [@openai2023gpt4]
+
+**2. GPT-4o (OpenAI)**
+
+- **Categoría:** Lenguaje natural generativo y multimodal
+- **Descripción:** Modelo que permite entrada y salida en texto, imagen y audio, con mejoras significativas en velocidad, eficiencia y capacidad multimodal respecto a GPT-4.
+- **Tipo de arquitectura:** Transformer autoregresivo multimodal
+- **¿Código abierto?:** No
+- **Año:** 2024
+- **Referencia:** [@openai2024gpt4o]
+
+**3. Claude 3 Opus (Anthropic)**
+
+- **Categoría:** Lenguaje natural generativo y multimodal
+- **Descripción:** Modelo avanzado de lenguaje que destaca en razonamiento, comprensión de textos extensos y capacidades multimodales.
+- **Tipo de arquitectura:** Transformer multimodal
+- **¿Código abierto?:** No
+- **Versiones principales:** Claude 3 Opus, Sonnet, Haiku
+- **Año:** 2024
+- **Referencia:** [@anthropic2024claude3]
+
+**4. Gemini 1.5 Pro (Google DeepMind)**
+
+- **Categoría:** Modelo multimodal
+- **Descripción:** Modelo que integra texto, imagen, audio y video, con capacidad para contexto extenso y razonamiento complejo en múltiples dominios.
+- **Tipo de arquitectura:** Transformer multimodal
+- **¿Código abierto?:** No
+- **Versiones principales:** Gemini 1.0, Gemini 1.5
+- **Año:** 2024
+- **Referencia:** [@deepmind2023gemini]
+
+**5. LLaMA 3 (Meta)**
+
+- **Categoría:** Lenguaje natural generativo
+- **Descripción:** Modelo abierto y eficiente, entrenado con una gran cantidad de textos en varios idiomas y diseñado para aplicaciones de generación y comprensión de texto.
+- **Tipo de arquitectura:** Transformer autoregresivo
+- **¿Código abierto?:** Sí
+- **Versiones principales:** LLaMA 1, 2, 3
+- **Año:** 2024
+- **Referencia:** [@meta2024llama3]
+
+**6. Mistral Mixtral 8x7B (Mistral AI)**
+
+- **Categoría:** Lenguaje natural generativo
+- **Descripción:** Modelo open-source basado en arquitectura Mixture-of-Experts, optimizado para eficiencia y alto desempeño en tareas de lenguaje y código.
+- **Tipo de arquitectura:** Transformer autoregresivo
+- **¿Código abierto?:** Sí
+- **Año:** 2023
+- **Referencia:** [@mistralai2023mixtral]
+
+**7. Command R (Cohere)**
+
+- **Categoría:** Recuperación aumentada por generación (RAG)
+- **Descripción:** Modelo diseñado para integración de búsqueda eficiente y generación de texto en contextos empresariales y conversacionales.
+- **Tipo de arquitectura:** Transformer autoregresivo
+- **¿Código abierto?:** No
+- **Año:** 2024
+- **Referencia:** [@cohere2024commandr]
+
+**8. Grok (xAI)**
+
+- **Categoría:** Lenguaje natural generativo
+- **Descripción:** Modelo enfocado en integración de información en tiempo real y razonamiento contextual avanzado, con acceso directo a información de redes sociales.
+- **Tipo de arquitectura:** Transformer autoregresivo
+- **¿Código abierto?:** Parcialmente
+- **Año:** 2023
+- **Referencia:** [@xai2023grok]
+
+**9. CLIP (OpenAI)**
+
+- **Categoría:** Visión por computador y lenguaje
+- **Descripción:** Modelo pionero en relacionar imágenes y texto, usado ampliamente en aplicaciones multimodales de visión-lenguaje.
+- **Tipo de arquitectura:** Transformer multimodal
+- **¿Código abierto?:** Sí
+- **Año:** 2021
+- **Referencia:** [@radford2021clip]
+
+**10. Segment Anything Model (SAM) (Meta)**
+
+- **Categoría:** Visión por computador (segmentación de imágenes)
+- **Descripción:** Modelo universal para segmentar cualquier objeto en una imagen, permitiendo anotación automática de objetos sin necesidad de entrenamiento adicional.
+- **Tipo de arquitectura:** Transformer para visión
+- **¿Código abierto?:** Sí
+- **Año:** 2023
+- **Referencia:** [@kirillov2023segmentanything]
+
+## Principales aplicaciones de los modelos fundacionales
+
+La siguiente tabla presentan ejemplos de áreas de aplicación de los modelos fundacionales:
+
+| Área de aplicación            | Descripción                                                       | Modelos fundacionales destacados                                                    |
+|-------------------------------|-------------------------------------------------------------------------|-------------------------------------------------------------------------------------|
+| Visión por computador         | Análisis y comprensión de imágenes, segmentación, búsqueda visual       | CLIP, Segment Anything Model (SAM), GPT-4o, Gemini 1.5 Pro                          |
+| Procesamiento de lenguaje natural | Generación y comprensión de texto, traducción, chatbots, análisis semántico      | GPT-4, GPT-4o, Claude 3 Opus, Gemini 1.5 Pro, LLaMA 3, Mistral Mixtral 8x7B, Command R, Grok |
+| Planificación y control       | Robótica autónoma, optimización de rutas, juegos y simulaciones         | Gemini 1.5 Pro, GPT-4o, Claude 3 Opus                                               |
+| Recomendación y personalización | Sistemas de recomendación y personalización de contenido                | GPT-4o, Claude 3 Opus, Gemini 1.5 Pro, Command R                                    |
+| Salud                         | Análisis de imágenes clínicas, apoyo en diagnóstico, predicción de riesgos | Segment Anything Model (SAM), CLIP, Gemini 1.5 Pro, GPT-4o                          |
+| Finanzas                      | Análisis y predicción de mercados, detección de fraudes, "scoring" crediticio | GPT-4, Claude 3 Opus, LLaMA 3, Mistral Mixtral 8x7B, Command R                      |
+| Educación                     | Tutores inteligentes, generación de materiales, personalización de aprendizaje | GPT-4o, Gemini 1.5 Pro, Claude 3 Opus, LLaMA 3, Mistral Mixtral 8x7B            |
+: Tabla 2. Modelos fundacionales aplicados en diferentes áreas.

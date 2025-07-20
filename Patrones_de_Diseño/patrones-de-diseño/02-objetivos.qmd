@@ -1,14 +1,12 @@
 # Objetivos
 
-Los siguientes objetivos orientan el desarrollo del presente artículo, garantizando un análisis integral y riguroso sobre el uso, evolución y buenas prácticas en torno a los patrones de diseño en software.
-
 ## Objetivo general
 
-Analizar y documentar el estado del arte sobre los patrones de diseño en el desarrollo de software, abordando su definición, clasificación, aplicaciones y tendencias actuales, con énfasis en la programación orientada a objetos.
+Analizar el papel de los patrones de diseño en la ingeniería de software, explorando su evolución, clasificación, aplicación y relevancia para la construcción de sistemas robustos, mantenibles y alineados con los desafíos actuales de la industria.
 
 ## Objetivos específicos
 
-- Identificar y describir los patrones de diseño más relevantes utilizados en el desarrollo de software, incluyendo su clasificación y casos de uso representativos.  
-- Analizar el propósito, los beneficios y el contexto de uso de diferentes patrones de diseño, distinguiendo su aplicación en diversos paradigmas de programación.  
-- Investigar el estado actual del conocimiento sobre patrones de diseño, empleando fuentes científicas, libros y artículos especializados.  
-- Reconocer y advertir sobre "anti-patrones", así como tendencias futuras en el uso y evolución de patrones de diseño en la industria del software.
+- Describir los fundamentos teóricos y los principales tipos de patrones de diseño en software, identificando sus características, ventajas y limitaciones en distintos paradigmas de programación.
+- Examinar los patrones de diseño clásicos y modernos más relevantes, ilustrando su aplicación a través de ejemplos prácticos y casos de uso en contextos reales de desarrollo.  
+- Analizar la relación entre los patrones de diseño, los principios fundamentales del diseño orientado a objetos (como SOLID y GRASP), y su impacto en la calidad, mantenibilidad y evolución del software.  
+- Identificar los principales anti-patrones, riesgos y desafíos asociados al uso inapropiado o excesivo de patrones de diseño, así como las tendencias emergentes en la disciplina.

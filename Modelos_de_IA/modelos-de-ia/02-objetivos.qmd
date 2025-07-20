@@ -1,0 +1,12 @@
+# Objetivos
+
+## Objetivo general
+
+Analizar de manera estructurada los principales modelos de inteligencia artificial, sus aplicaciones actuales y su impacto en el ámbito social y laboral, identificando los desafíos, riesgos y tendencias que configuran el futuro de esta tecnología.
+
+## Objetivos específicos
+
+- Describir los fundamentos teóricos y las principales tipologías de modelos de inteligencia artificial, resaltando sus diferencias, ventajas y limitaciones.
+- Identificar y explicar los modelos fundacionales más relevantes en la actualidad, detallando sus características, áreas de aplicación y ejemplos concretos.
+- Examinar los principales desafíos, limitaciones y riesgos asociados al uso y desarrollo de modelos de inteligencia artificial, especialmente en lo que respecta a la ética, la privacidad y la equidad.
+- Analizar las tendencias emergentes y perspectivas futuras de la inteligencia artificial, considerando tanto las oportunidades de innovación como sus implicaciones sociales y laborales.

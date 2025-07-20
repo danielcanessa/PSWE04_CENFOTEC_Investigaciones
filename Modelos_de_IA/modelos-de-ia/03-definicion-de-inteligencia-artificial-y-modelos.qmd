@@ -1,0 +1,9 @@
+# ¿Qué es la inteligencia artificial?
+
+La inteligencia artificial (IA) se puede definir como la habilidad de que el software realice actividades que normalmente requieren inteligencia humana. En una definición más detallada, la IA es la capacidad de las máquinas para utilizar algoritmos, aprender de los datos y aplicar lo aprendido en la toma de decisiones, de forma similar a los seres humanos. La IA permite que los sistemas informáticos procesen grandes volúmenes de información, aprendan y ejecuten tareas complejas [@rouhiainen2018inteligencia].
+
+Por otro lado, Russell y Norvig (2010) definen la inteligencia artificial como el estudio de los agentes inteligentes, es decir, sistemas que perciben su entorno y realizan acciones que maximizan sus posibilidades de éxito [@russell2010inteligencia].
+
+En ambos casos se enfatiza la importancia de la percepción y la acción orientada a objetivos, e incluyen áreas como el aprendizaje automático, la representación del conocimiento, el razonamiento y la resolución de problemas. La IA no solo busca replicar capacidades humanas, sino también desarrollar nuevas formas de inteligencia que pueden superar las limitaciones humanas en procesamiento, velocidad y precisión.
+
+El desarrollo y alcance de la inteligencia artificial, así como sus principales modelos, aplicaciones y desafíos, se abordan en detalle en las siguientes secciones de este documento.
