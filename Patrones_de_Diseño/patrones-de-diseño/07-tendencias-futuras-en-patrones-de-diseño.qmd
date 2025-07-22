@@ -4,17 +4,17 @@ El universo de los patrones de diseño está lejos de ser estático; su evoluci�
 
 Entre las tendencias más relevantes destacan:
 
-- **Patrones para "Inteligencia Artificial" y "Machine Learning":**  
-  El diseño de sistemas inteligentes requiere arquitecturas para gestionar flujos de datos complejos, "pipelines" de entrenamiento y despliegue de modelos, reproducibilidad de experimentos y manejo ético de la inteligencia artificial. Se han propuesto patrones específicos para estos retos, como "ML Patterns" y frameworks para reproducibilidad y mantenimiento de modelos [@amershi2019software, @sato2021mlpatterns, @sculley2015hiddentechdebt].
+- **Patrones para "Inteligencia Artificial" y "Machine Learning":**
+  El diseño de sistemas inteligentes requiere arquitecturas para gestionar flujos de datos complejos, "pipelines" de entrenamiento y despliegue de modelos, reproducibilidad de experimentos y manejo ético de la inteligencia artificial. Se han propuesto patrones específicos para estos retos, como "ML Patterns" y frameworks para reproducibilidad y mantenimiento de modelos [@amershi2019software].
 
-- **Patrones para arquitecturas "serverless":**  
-  Con la popularización del cómputo sin servidor, emergen estrategias y patrones para orquestar funciones efímeras, gestionar el estado y la comunicación en plataformas desacopladas, así como optimizar costos y tiempos de respuesta [@roberts2018serverless, @spillner2017patterns].
+- **Patrones para arquitecturas "serverless":**
+  Con la popularización del cómputo sin servidor, emergen estrategias y patrones para orquestar funciones efímeras, gestionar el estado y la comunicación en plataformas desacopladas, así como optimizar costos y tiempos de respuesta [@roberts2018serverless].
 
-- **Patrones para "DevOps" y automatización:**  
-  La integración entre desarrollo y operación está impulsando patrones para infraestructura como código, despliegues progresivos ("blue-green deployment", "canary releases"), monitoreo automatizado y autoescalado [@fowler2010bluegreen, @forsgren2018accelerate].
+- **Patrones para "DevOps" y automatización:**
+  La integración entre desarrollo y operación está impulsando patrones para infraestructura como código, despliegues progresivos ("blue-green deployment", "canary releases"), monitoreo automatizado y autoescalado [@fowler2010bluegreen].
 
-- **Patrones para sistemas distribuidos y resilientes:**  
-  El auge de arquitecturas "cloud-native" y microservicios exige patrones avanzados para tolerancia a fallos, recuperación automática y operación global [@newman2015building, @nygard2007release].
+- **Patrones para sistemas distribuidos y resilientes:**
+  El auge de arquitecturas "cloud-native" y microservicios exige patrones avanzados para tolerancia a fallos, recuperación automática y operación global [@newman2015building].
 
-- **Patrones para aplicaciones reactivas y en tiempo real:**  
+- **Patrones para aplicaciones reactivas y en tiempo real:**
   La creciente demanda de experiencias interactivas y procesamiento masivo de eventos impulsa la creación de patrones para manejar grandes volúmenes de datos, flujos de eventos y baja latencia [@kuhn2017reactive].

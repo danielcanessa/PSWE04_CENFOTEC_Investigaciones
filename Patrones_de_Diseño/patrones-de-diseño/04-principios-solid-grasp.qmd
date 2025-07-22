@@ -1,53 +1,53 @@
 # Principios de diseño: SOLID y GRASP
 
-El diseño de software en el paradigma orientado a objetos se apoya en principios fundamentales que guían la toma de decisiones para lograr sistemas de alta calidad. Entre los más reconocidos y aplicados en la industria destacan los principios "SOLID" y los patrones "GRASP". Estos proporcionan criterios claros para la asignación de responsabilidades, la gestión de dependencias y la evolución sostenible del software, facilitando la correcta aplicación de patrones de diseño [@gamma1994design, @buschmann1996pattern].
+El diseño de software en el paradigma orientado a objetos se apoya en principios fundamentales que guían la toma de decisiones para lograr sistemas de alta calidad. Entre los más reconocidos y aplicados en la industria destacan los principios "SOLID" y los patrones "GRASP". Estos proporcionan criterios claros para la asignación de responsabilidades, la gestión de dependencias y la evolución sostenible del software, facilitando la correcta aplicación de patrones de diseño [@gamma1994design].
 
 ## Principios SOLID
 
-El acrónimo "SOLID" agrupa cinco principios esenciales, formulados por Robert C. Martin ("Uncle Bob") para guiar el diseño y la implementación de clases y objetos en "OOP". Estos principios fomentan la cohesión y reducen el acoplamiento entre los componentes del software, facilitando su evolución, extensión y mantenimiento a largo plazo [@gamma1994design, @buschmann1996pattern].
+El acrónimo "SOLID" agrupa cinco principios esenciales, formulados por Robert C. Martin ("Uncle Bob") para guiar el diseño y la implementación de clases y objetos en "OOP". Estos principios fomentan la cohesión y reducen el acoplamiento entre los componentes del software, facilitando su evolución, extensión y mantenimiento a largo plazo [@gamma1994design].
 
-- **Principio de Responsabilidad Única (SRP):** una clase debe tener una única responsabilidad, es decir, solo una razón para cambiar.  
+- **Principio de Responsabilidad Única (SRP):** una clase debe tener una única responsabilidad, es decir, solo una razón para cambiar.
   _Ejemplo:_ Una clase "GestorDeUsuarios" que solo administra usuarios, y no reportes ni validaciones externas.
 
-- **Principio Open/Close (OCP):** las entidades de software deben estar abiertas para su extensión, pero cerradas para su modificación.  
+- **Principio Open/Close (OCP):** las entidades de software deben estar abiertas para su extensión, pero cerradas para su modificación.
   _Ejemplo:_ Implementar nuevas formas de pago añadiendo nuevas clases que implementan una interfaz "Pago", sin modificar el código existente.
 
-- **Principio de Sustitución de Liskov (LSP):** los objetos de una subclase deben poder sustituir a los de la clase base sin alterar el funcionamiento correcto del sistema.  
+- **Principio de Sustitución de Liskov (LSP):** los objetos de una subclase deben poder sustituir a los de la clase base sin alterar el funcionamiento correcto del sistema.
   _Ejemplo:_ Una clase "PatoDeGoma" que implementa a "Pato" debe poder usarse donde se espera un "Pato", sin romper la lógica.
 
-- **Principio de Segregación de Interfaces (ISP):** es preferible definir varias interfaces específicas y pequeñas antes que una interfaz general y amplia.  
+- **Principio de Segregación de Interfaces (ISP):** es preferible definir varias interfaces específicas y pequeñas antes que una interfaz general y amplia.
   _Ejemplo:_ Interfaces separadas "Imprimible" y "Escaneable" en vez de una única interfaz "DispositivoMultifunción".
 
-- **Principio de Inversión de Dependencias (DIP):** los módulos de alto nivel no deben depender de módulos de bajo nivel; ambos deben depender de abstracciones.  
+- **Principio de Inversión de Dependencias (DIP):** los módulos de alto nivel no deben depender de módulos de bajo nivel; ambos deben depender de abstracciones.
   _Ejemplo:_ Una clase "ControladorDeLuz" depende de la interfaz "Interruptor", no de una implementación concreta.
 
 ## Patrones GRASP
 
-Los patrones "GRASP" ("General Responsibility Assignment Software Patterns"), propuestos por Craig Larman, ofrecen un marco para asignar responsabilidades en "OOP" [@buschmann1996pattern, @schmidt1995using]. Cada patrón proporciona una respuesta estructurada a preguntas clave sobre cómo distribuir tareas y relaciones entre clases y objetos:
+Los patrones "GRASP" ("General Responsibility Assignment Software Patterns"), propuestos por Craig Larman, ofrecen un marco para asignar responsabilidades en "OOP" [@schmidt1995using]. Cada patrón proporciona una respuesta estructurada a preguntas clave sobre cómo distribuir tareas y relaciones entre clases y objetos:
 
-- **Creador (Creator):** indica qué clase debe ser responsable de crear instancias de otras clases, basándose en la posesión o uso de los objetos creados.  
+- **Creador (Creator):** indica qué clase debe ser responsable de crear instancias de otras clases, basándose en la posesión o uso de los objetos creados.
   _Ejemplo:_ Una clase "Pedido" crea instancias de "DetalleDePedido" porque "Pedido" está compuesto por varios detalles, y administra el ciclo de vida de esos objetos.
 
-- **Experto en información (Information Expert):** asigna la responsabilidad a la clase que tiene la información necesaria para cumplirla de manera eficiente.  
+- **Experto en información (Information Expert):** asigna la responsabilidad a la clase que tiene la información necesaria para cumplirla de manera eficiente.
   _Ejemplo:_ Una clase "CuentaBancaria" calcula su saldo porque posee la información de los movimientos.
 
-- **Controlador (Controller):** sugiere la introducción de un objeto intermediario que reciba y coordine solicitudes provenientes de la interfaz de usuario u otros sistemas externos.  
+- **Controlador (Controller):** sugiere la introducción de un objeto intermediario que reciba y coordine solicitudes provenientes de la interfaz de usuario u otros sistemas externos.
   _Ejemplo:_ Un objeto "ControladorDeReservas" recibe las solicitudes de la interfaz de usuario para crear, modificar o cancelar reservas, y coordina las operaciones necesarias sobre los objetos "Reserva", "Cliente" y "Habitación".
 
-- **Bajo acoplamiento (Low Coupling):** favorece el diseño de clases y módulos con dependencias mínimas, promoviendo la flexibilidad y facilidad de cambio.  
+- **Bajo acoplamiento (Low Coupling):** favorece el diseño de clases y módulos con dependencias mínimas, promoviendo la flexibilidad y facilidad de cambio.
   _Ejemplo:_ Una clase "Reporte" que recibe sus dependencias vía interfaces, no crea instancias concretas internamente.
 
-- **Alta cohesión (High Cohesion):** promueve que las clases agrupen responsabilidades altamente relacionadas, evitando clases que gestionen tareas que no le corresponden.  
+- **Alta cohesión (High Cohesion):** promueve que las clases agrupen responsabilidades altamente relacionadas, evitando clases que gestionen tareas que no le corresponden.
   _Ejemplo:_ Una clase "GestorDeClientes" se ocupa solo de operaciones sobre clientes, no de facturación ni inventarios.
 
-- **Polimorfismo (Polymorphism):** permite que diferentes tipos de objetos respondan a la misma interfaz o mensaje, haciendo posible que una misma operación se ejecute de distintas formas según el contexto. El polimorfismo se puede dar a nivel de clases (mediante herencia e interfaces) y a nivel de funciones (mediante sobrecarga o uso de genéricos).  
+- **Polimorfismo (Polymorphism):** permite que diferentes tipos de objetos respondan a la misma interfaz o mensaje, haciendo posible que una misma operación se ejecute de distintas formas según el contexto. El polimorfismo se puede dar a nivel de clases (mediante herencia e interfaces) y a nivel de funciones (mediante sobrecarga o uso de genéricos).
   _Ejemplo:_ Una interfaz "Notificación" define el método "enviar()". Tanto "NotificaciónPorCorreo" como "NotificaciónPorSMS" implementan este método con lógica diferente. El sistema puede usar una referencia de tipo "Notificación" para invocar "enviar()", la implementación concreta dependerá del tipo real del objeto.
 
-- **Fabricación pura (Pure Fabrication):** plantea la creación de clases que no representan conceptos del dominio real, sino que existen únicamente para lograr un diseño más flexible, reutilizable o desacoplado.  
+- **Fabricación pura (Pure Fabrication):** plantea la creación de clases que no representan conceptos del dominio real, sino que existen únicamente para lograr un diseño más flexible, reutilizable o desacoplado.
   _Ejemplo:_ Una clase "ServicioDeAutenticación" que gestiona la verificación de credenciales y el manejo de sesiones de usuario, pero no representa un concepto real del dominio, sino que existe para separar responsabilidades y mejorar la reutilización del código.
 
-- **Indirección (Indirection):** introduce un objeto intermediario para desacoplar dos elementos, facilitando la extensibilidad y permitiendo cambios en uno de los extremos sin afectar al otro.  
+- **Indirección (Indirection):** introduce un objeto intermediario para desacoplar dos elementos, facilitando la extensibilidad y permitiendo cambios en uno de los extremos sin afectar al otro.
   _Ejemplo:_ El patrón "Adapter", donde una clase adapta la interfaz de un componente externo para que pueda ser utilizado por el sistema.
 
-- **Variaciones protegidas (Protected Variations):** identifica los puntos donde es probable que ocurran cambios o variaciones y los protege mediante abstracciones, minimizando el impacto de los cambios futuros.  
+- **Variaciones protegidas (Protected Variations):** identifica los puntos donde es probable que ocurran cambios o variaciones y los protege mediante abstracciones, minimizando el impacto de los cambios futuros.
   _Ejemplo:_ Definir una interfaz "Almacenamiento" y tener varias implementaciones ("AlmacenamientoEnMemoria", "AlmacenamientoEnDisco") para proteger el resto del sistema de cambios en la forma de almacenamiento.

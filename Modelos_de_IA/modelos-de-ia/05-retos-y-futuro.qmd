@@ -1,6 +1,6 @@
 # Desafíos, limitaciones y riesgos
 
-A pesar de los grandes avances de la inteligencia artificial y los modelos fundacionales, existen importantes desafíos y riesgos que deben considerarse en su desarrollo y adopción [@bommasani2021opportunities; @russell2010inteligencia]:
+A pesar de los grandes avances de la inteligencia artificial y los modelos fundacionales, existen importantes desafíos y riesgos que deben considerarse en su desarrollo y adopción [@bommasani2021opportunities]:
 
 - **Sesgo y discriminación:** Los modelos pueden perpetuar o incluso amplificar sesgos presentes en los datos de entrenamiento, lo que puede llevar a decisiones injustas o resultados discriminatorios en ámbitos como la salud o la contratación [@bommasani2021opportunities].
 - **Explicabilidad y transparencia:** Muchos modelos modernos, especialmente los basados en "deep learning", funcionan como “cajas negras”, dificultando la comprensión de cómo se toman las decisiones y limitando su adopción en sectores regulados o críticos [@goodfellow2016deep].
@@ -12,7 +12,7 @@ A pesar de los grandes avances de la inteligencia artificial y los modelos funda
 
 # Perspectivas futuras y tendencias
 
-El campo de la inteligencia artificial y los modelos fundacionales sigue evolucionando rápidamente. Entre las principales tendencias y perspectivas a futuro destacan [@bommasani2021opportunities; @goodfellow2016deep; @russell2010inteligencia]:
+El campo de la inteligencia artificial y los modelos fundacionales sigue evolucionando rápidamente. Entre las principales tendencias y perspectivas a futuro destacan [@bommasani2021opportunities]:
 
 - **Avances en modelos multimodales:** Se espera que los modelos sean cada vez más capaces de integrar información de texto, imagen, audio y video, permitiendo aplicaciones más completas y contextuales.
 - **Mayor eficiencia y sostenibilidad:** Habrá un énfasis en el desarrollo de modelos más eficientes, que requieran menos recursos para entrenarse y operar, buscando minimizar el impacto ambiental y ampliar el acceso a la tecnología.
