@@ -1,5 +1,5 @@
 ---
-title: "Modelos de IA: LLaMA 3, características y aplicaciones"
+title: "Modelos de IA: LLaMA 3"
 author:
   - Daniel Canessa Valverde
   - Stephanie Delgado Brenes
@@ -12,6 +12,16 @@ format:
 ---
 
 # Agenda
+
+1. **Introducción a los LLMs**
+2. **¿Qué es LLaMA 3?**
+3. **Arquitectura y capacidades técnicas**
+4. **Rendimiento y benchmarks**
+5. **Aplicaciones y casos de uso**
+6. **Open source y ecosistema**
+7. **Limitaciones y desafíos**
+8. **Tendencias y futuro**
+9. **Conclusiones**
 
 
 
@@ -41,6 +51,7 @@ format:
 - Modelo de lenguaje grande (LLM) lanzado por Meta en abril de 2024.
 - Diseñado para tareas avanzadas de procesamiento de lenguaje natural (como comprensión, generación y razonamiento sobre texto).
 - Es open source: pesos y documentación públicos, promoviendo el acceso comunitario (el modelo se puede descargar, modificar y usar).
+- LLaMA 3 fue entrenado con más de 15 billones de tokens basados datasets de: common crawl, wikipedia, libros de dominio público, papers científicos y repositorios open source.
 
 ## Versiones de LLaMA
 
@@ -118,7 +129,7 @@ Métricas utilizadas para comparar LLMs:
 | **MGSM (%)**    | 79.0         | **90.5**   | 88.5          | **74.5**           |
 | **DROP (f1)**   | 83.5         | **93.4**   | 86.0          | **78.9**           |
 
->*Fuentes: Meta AI Blog, OpenAI Hello GPT‑4o, Anthropic Claude 3, Google Gemini Pro, Hugging Face Leaderboard.*
+>*Fuentes: Meta AI Blog, OpenAI Hello GPT‑4o, Anthropic Claude 3, Google Gemini Pro, Hugging Face Leaderboard - Julio 2024.*
 
 
 **Nota**: LLaMA 3.1 supera a modelos open source previos y queda cerca de los modelos comerciales, pero todavía detrás de GPT‑4o y Claude 3 en varias pruebas.
@@ -142,11 +153,44 @@ Métricas utilizadas para comparar LLMs:
 
 
 
-# Open Source y ecosistema
+# Open Source
 
-- Importancia de la licencia y acceso a pesos
-- Fine-tuning y extensiones (comunidad)
-- Herramientas compatibles: transformers, LLaMA.cpp, Hugging Face, etc.
+- **Licencia abierta:**  
+  - Open source, con pesos y documentación accesible.
+  - Permite uso académico, empresarial y personal sin costo.
+  - **Restricciones:** 
+    - No se puede usar LLaMA para crear otro modelo de gran escala sin permiso de Meta. 
+    - Prohibido utilizarlo para actividades ilícitas.
+    
+- **Accesibilidad de los pesos:**  
+  - Cualquier persona puede descargar los modelos, auditarlos, adaptarlos y hacer fine-tuning localmente o en la nube.
+
+- **Contribuciones de la comunidad:**  
+  - Modelos multilingües y adaptados para derecho, medicina, programación, etc. Ejemplo: [LLaMA-3-8B-Orca](https://huggingface.co/Open-Orca/OpenOrca-Llama-3-8B).
+  - llama.cpp: librería open source que permite correr LLaMA 3.1 en CPU, Raspberry Pi, Macbooks y servidores, sin requerir GPU. Permite reducir el tamaño sin perder mucha precisión y ejecución en dispositivos móviles.
+
+# Ecosistema
+
+- **Versatilidad de despliegue:**  
+  - LLaMA puede ejecutarse en una amplia variedad de plataformas, desde laptops y servidores hasta dispositivos edge y cloud pública.
+
+- **Local:**  
+  - PC, Mac, servidores (con o sin GPU).
+  - Raspberry Pi y dispositivos ARM.
+  - Móviles Android (experimental).
+
+- **Cloud y servicios gestionados:**  
+  - [AWS SageMaker](https://aws.amazon.com/sagemaker/)
+  - [Google Vertex AI](https://cloud.google.com/vertex-ai)
+  - [Azure Machine Learning](https://azure.microsoft.com/en-us/products/machine-learning)
+
+- **Contenedores y MLOps:**  
+  - Fácil integración en pipelines de CI/CD mediante Docker y Kubernetes.
+
+- **Frameworks de soporte:**  
+  - [llama.cpp](https://github.com/ggerganov/llama.cpp): inferencia eficiente en CPU/edge/móvil
+  - [vLLM](https://github.com/vllm-project/vllm): inferencia ultra-rápida en GPU
+  - [Ollama](https://ollama.com): despliegue y manejo fácil de modelos en local
 
 
 
@@ -172,12 +216,30 @@ Métricas utilizadas para comparar LLMs:
 
 # Tendencias y futuro
 
-- Próximos releases: ¿qué esperar?
-- Multimodalidad, agentes, eficiencia, interpretabilidad
-- Futuro de la IA open source
+## Tendencias actuales de LLaMA
 
+- **LLaMA 3.1 (2024):** 
+  - Modelos de hasta 405B parámetros, ventana de contexto de 128k tokens.
+  - Solo texto. Enfoque en rendimiento, multilingüismo y open source.
+- **LLaMA 3.2 (2024):** 
+  - Modelos de 1B, 3B, 11B, 90B parámetros. Ventana de contexto de 128k tokens.
+  - **Primera versión multimodal:** modelos especializados en texto y modelos con capacidades de visión (texto + imagen).
+  - Incluye variantes ligeras para dispositivos edge (1B, 3B) y modelos grandes para cloud (11B, 90B).
+- **LLaMA 3.3 (2024):** 
+  - Modelo de 70B parámetros, 128k tokens.
+  - Enfoque instruccional: mejoras en razonamiento, tareas de programación y multilingüismo.
+  - No es multimodal, pero optimizado para rendimiento en tareas complejas.
+- **LLaMA 4 (2025):** 
+  - Modelos “Scout” y “Maverick”: 17B parámetros activos, hasta 400B totales (Mixture-of-Experts).
+  - Ventana de contexto de hasta **10 millones de tokens**.
+  - **Multimodal nativo:** arquitectura optimizada para fusionar modalidades.
 
+## Futuro:
 
+- **Modelos aún más grandes y eficientes** (por ejemplo, LLaMA 4 Behemoth en desarrollo).
+- **Multimodalidad avanzada:** integración de audio, video y otras modalidades junto a texto e imagen.
+- **Ventanas de contexto ultra-largas:** millones de tokens, memoria dinámica y mejores técnicas de manejo de contexto relevante.
+- **Personalización y fine-tuning local**: métodos más fáciles y económicos para adaptar los modelos a tareas o dominios específicos.
 
 
 
@@ -204,3 +266,4 @@ Métricas utilizadas para comparar LLMs:
 - [Anthropic Claude 3.5 Sonnet](https://www.anthropic.com/news/claude-3-5-sonnet)  
 - [Google Gemini AI](https://blog.google/technology/ai/google-gemini-ai/)  
 - [Hugging Face Open LLM Leaderboard](https://huggingface.co/spaces/HuggingFaceH4/open_llm_leaderboard)
+    (https://ai.meta.com/resources/models-and-libraries/llama-downloads/)).
