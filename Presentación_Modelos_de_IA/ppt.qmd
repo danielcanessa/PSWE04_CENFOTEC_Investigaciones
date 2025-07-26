@@ -1,0 +1,73 @@
+---
+title: "Modelos de IA: Llama 3, características y aplicaciones"
+author:
+  - Daniel Canessa Valverde
+  - Stephanie Delgado Brenes
+format:
+  pptx:
+    reference-doc: template.pptx
+---
+
+# Introducción al contexto de LLMs
+
+- Evolución de los modelos de lenguaje
+    - De GPT a LLaMA: ¿qué cambió?
+    - ¿Por qué es relevante hablar de LLaMA 3?
+- Importancia del open source en IA generativa
+
+
+# ¿Qué es LLaMA 3?
+
+- Breve historia: LLaMA 1, LLaMA 2, LLaMA 3
+- Objetivos y filosofía de desarrollo
+    - Acceso abierto, comunidad, democratización
+
+
+# Arquitectura y capacidades técnicas
+
+- Parámetros y tamaños de modelo (8B, 70B, etc.)
+- Innovaciones sobre LLaMA 2
+- Entrenamiento: datos, compute, alineamiento
+- Comparación rápida con GPT-4, Gemini, Claude 3
+
+
+# Rendimiento y benchmarks
+
+- Resultados en MMLU, HumanEval, BIG-bench, etc.
+- Capacidades multilingües y de razonamiento
+- Tabla comparativa con otros modelos
+
+
+# Aplicaciones y casos de uso
+
+- Chatbots, asistentes, generación de código
+- Integraciones en productos reales (ejemplos)
+- Impacto en industria y comunidad open source
+
+
+# Open Source y ecosistema
+
+- Importancia de la licencia y acceso a pesos
+- Fine-tuning y extensiones (comunidad)
+- Herramientas compatibles: transformers, llama.cpp, Hugging Face, etc.
+
+
+# Limitaciones y desafíos
+
+- Ética, seguridad, sesgos, alucinaciones
+- Longitud de contexto y límites técnicos
+- Uso responsable y retos de escalabilidad
+
+
+# Tendencias y futuro
+
+- Próximos releases: ¿qué esperar?
+- Multimodalidad, agentes, eficiencia, interpretabilidad
+- Futuro de la IA open source
+
+
+# Conclusiones
+
+- Impacto de LLaMA 3 en el ecosistema de IA
+- Democratización de acceso a IA avanzada
+- Reflexión final y preguntas
