@@ -23,14 +23,6 @@ format:
 8. Tendencias y futuro
 9. Conclusiones
 
-
-
-
-
-
-
-
-
 # Introducción al contexto de LLMs
 
 ## Evolución de los modelos de lenguaje
@@ -43,8 +35,6 @@ format:
 > Nota: La transición de GPT a LLaMA representa un cambio clave:
   - De modelos cerrados, costosos y centralizados
   - A modelos eficientes, abiertos y adaptables
-
-
 
 # ¿Qué es LLaMA 3?
 
@@ -73,8 +63,6 @@ format:
 - Democratización de la IA.
 - Transparencia y ética en el desarrollo de inteligencia artificial.
 
-
-
 # Arquitectura y capacidades técnicas
 
 ## Parámetros y tamaños de modelo
@@ -101,8 +89,6 @@ LLaMA 3 se lanzó inicialmente en dos variantes:
 - **Alineamiento**
   - El modelo Instruct (chat) es más útil para tareas conversacionales y muestra avances en seguridad y control.
   - Se aplican técnicas de alignment tuning
-
-
 
 # Rendimiento y benchmarks
 
@@ -132,10 +118,7 @@ Métricas utilizadas para comparar LLMs:
 | **MGSM (%)**    | 79.0         | **90.5**   | 88.5          | **74.5**           |
 >*Fuentes: Meta AI Blog, OpenAI Hello GPT‑4o, Anthropic Claude 3, Google Gemini Pro, Hugging Face Leaderboard - Julio 2024.*
 
-
 **Nota**: LLaMA 3.1 supera a modelos open source previos y queda cerca de los modelos comerciales, pero todavía detrás de GPT‑4o y Claude 3 en varias pruebas.
-
-
 
 # Aplicaciones y casos de uso
 
@@ -151,9 +134,6 @@ Métricas utilizadas para comparar LLMs:
 | **Ollama y LM Studio:**    | Correr LLMs sin conexión a la nube.                                      | 
 | **LangChain y LlamaIndex** | Integraciones para agentes y apps conversacionales.                      | 
 | **Meta AI**                | Experiencias sociales y plataformas como WhatsApp, Instagram y Messenger.| 
-
-
-
 
 # Ecosistema
 
@@ -178,14 +158,6 @@ Métricas utilizadas para comparar LLMs:
   - [vLLM](https://github.com/vllm-project/vllm): inferencia ultra-rápida en GPU
   - [OLLaMA](https://oLLaMA.com): despliegue y manejo fácil de modelos en local
 
-
-
-
-
-
-
-
-
 # Limitaciones y desafíos
 
 ## Ética y seguridad
@@ -203,9 +175,6 @@ Los LLMs tienen un gran poder de generación y automatización, pero no tienen c
   - Manipulación
   - Generación de contenido dañino
   - Fugas de datos
-
-
-
 
 # Tendencias y futuro
 
@@ -241,13 +210,12 @@ Los LLMs tienen un gran poder de generación y automatización, pero no tienen c
 - Soberanía tecnológica
 - Impulsa el crecimiento digital
 
-
 # Fuentes
 - [Meta AI Blog](https://ai.meta.com/blog/meta-LLaMA-3/)
 - [Number of Parameters in GPT-4](https://explodingtopics.com/blog/gpt-parameters)
 - [OpenAI Hello GPT‑4o](https://openai.com/index/hello-gpt-4o)
-- [Anthropic Claude 3.5 Sonnet](https://www.anthropic.com/news/claude-3-5-sonnet)  
-- [Google Gemini AI](https://blog.google/technology/ai/google-gemini-ai/)  
+- [Anthropic Claude 3.5 Sonnet](https://www.anthropic.com/news/claude-3-5-sonnet)
+- [Google Gemini AI](https://blog.google/technology/ai/google-gemini-ai/)
 - [Hugging Face Open LLM Leaderboard](https://huggingface.co/spaces/HuggingFaceH4/open_llm_leaderboard)
 - [OpenAI – GPT-4 Technical Report](https://openai.com/index/gpt-4-research)
 - [Mistral AI – Mixtral of Experts](https://mistral.ai/news/mixtral-of-experts)
