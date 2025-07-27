@@ -33,16 +33,16 @@ format:
 
 # Introducción al contexto de LLMs
 
-- Evolución de los modelos de lenguaje
-    - De GPT a LLaMA: ¿qué cambió?
-    - ¿Por qué es relevante hablar de LLaMA 3?
-- Importancia del open source en IA generativa
+## Evolución de los modelos de lenguaje
 
+| Modelo      | Arquitectura          | Calidad y selección de datos     | Acceso al modelo      | Licencia    | Comunidad                         |
+|-------------|-----------------------|----------------------------------|-----------------------|-------------|-----------------------------------|
+| **GPT**     | Transformer estándar  | Grandes cantidades pero opacos.  | Cerrado, solo vía API | Propietaria | Limitada por restricciones        |
+| **LLaMA**   | Transformer optimizado| Datos filtrados y de alta calidad| Descargable           | Abierta     | Activa, con proyectos derivados   |
 
-
-
-
-
+> Nota: La transición de GPT a LLaMA representa un cambio clave:
+  - De modelos cerrados, costosos y centralizados
+  - A modelos eficientes, abiertos y adaptables
 
 
 
@@ -75,24 +75,32 @@ format:
 
 
 
-
-
-
-
-
-
 # Arquitectura y capacidades técnicas
 
-- Parámetros y tamaños de modelo (8B, 70B, etc.)
-- Innovaciones sobre LLaMA 2
-- Entrenamiento: datos, compute, alineamiento
-- Comparación rápida con GPT-4, Gemini, Claude 3
+## Parámetros y tamaños de modelo
 
+LLaMA 3 se lanzó inicialmente en dos variantes:
+- **LLaMA 3 8B**
+  - Eficiencia en hardware limitado
+  - 8 mil millones de parámetros
+  - Utiliza un tamaño aproximado de 16 GB
 
+- **LLaMA 3 70B**
+  - Máximo rendimientos y capacidad
+  - 70 mil millones de parámetros
+  - Utiliza un tamaño aproximado de 140 GB
 
+## Proceso de entrenamiento
 
+- **Datos de entrenamiento**
+  - LLaMA 3 fue entrenado con un dataset de aproximadamente 15 billones (15T) de tokens.
 
+- **Cómputo**
+  - El entrenamiento se realizó usando clusters de GPU de alto rendimiento, incluyendo NVIDIA H100 en infraestructura interna de Meta.
 
+- **Alineamiento**
+  - El modelo Instruct (chat) es más útil para tareas conversacionales y muestra avances en seguridad y control.
+  - Se aplican técnicas de alignment tuning
 
 
 
@@ -129,19 +137,20 @@ Métricas utilizadas para comparar LLMs:
 
 
 
-
-
-
 # Aplicaciones y casos de uso
 
-- Chatbots, asistentes, generación de código
-- Integraciones en productos reales (ejemplos)
-- Impacto en industria y comunidad open source
+- Asistencia conversacional
+- Genera textos coherentes
+- Generación de código
 
+## Integraciones en productos reales
 
-
-
-
+| Producto                   | Descripción                                                              | 
+|----------------------------|--------------------------------------------------------------------------|
+| **Hugging Face**           | Inferencia directa.                                                      | 
+| **Ollama y LM Studio:**    | Correr LLMs sin conexión a la nube.                                      | 
+| **LangChain y LlamaIndex** | Integraciones para agentes y apps conversacionales.                      | 
+| **Meta AI**                | Experiencias sociales y plataformas como WhatsApp, Instagram y Messenger.| 
 
 
 
@@ -179,14 +188,21 @@ Métricas utilizadas para comparar LLMs:
 
 # Limitaciones y desafíos
 
-- Ética, seguridad, sesgos, alucinaciones
-- Longitud de contexto y límites técnicos
-- Uso responsable y retos de escalabilidad
+## Ética y seguridad
 
+Los LLMs tienen un gran poder de generación y automatización, pero no tienen conciencia, intención ni comprensión moral.
 
+- **Riesgos éticos**
+  - Reproducción de sesgos sociales
+  - Desinformación
+  - Falta de transparencia
+  - Supresión o amplificación ideológica
 
-
-
+- **Seguridad**
+  - Alucinaciones
+  - Manipulación
+  - Generación de contenido dañino
+  - Fugas de datos
 
 
 
@@ -218,22 +234,12 @@ Métricas utilizadas para comparar LLMs:
 - **Ventanas de contexto ultra-largas:** millones de tokens, memoria dinámica y mejores técnicas de manejo de contexto relevante.
 - **Personalización y fine-tuning local**: métodos más fáciles y económicos para adaptar los modelos a tareas o dominios específicos.
 
-
-
-
-
-
 # Conclusiones
 
-- Impacto de LLaMA 3 en el ecosistema de IA
-- Democratización de acceso a IA avanzada
-- Reflexión final y preguntas
-
-
-
-
-
-
+- LLaMA 3 es señal del futuro
+- Reflexión ética profunda
+- Soberanía tecnológica
+- Impulsa el crecimiento digital
 
 
 # Fuentes
@@ -243,4 +249,8 @@ Métricas utilizadas para comparar LLMs:
 - [Anthropic Claude 3.5 Sonnet](https://www.anthropic.com/news/claude-3-5-sonnet)  
 - [Google Gemini AI](https://blog.google/technology/ai/google-gemini-ai/)  
 - [Hugging Face Open LLM Leaderboard](https://huggingface.co/spaces/HuggingFaceH4/open_llm_leaderboard)
-    (https://ai.meta.com/resources/models-and-libraries/LLaMA-downloads/)).
+- [OpenAI – GPT-4 Technical Report](https://openai.com/index/gpt-4-research)
+- [Mistral AI – Mixtral of Experts](https://mistral.ai/news/mixtral-of-experts)
+- [Exploding Topics – GPT Parameters](https://explodingtopics.com/blog/gpt-parameters)
+- [UNESCO – Ethics of Artificial Intelligence](https://www.unesco.org/en/artificial-intelligence/recommendation-ethics)
+
