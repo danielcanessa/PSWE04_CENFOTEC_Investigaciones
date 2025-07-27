@@ -68,11 +68,11 @@ format:
 ## Parámetros y tamaños de modelo
 
 LLaMA 3 se lanzó inicialmente en dos variantes:
+
 - **LLaMA 3 8B**
   - Eficiencia en hardware limitado
   - 8 mil millones de parámetros
   - Utiliza un tamaño aproximado de 16 GB
-
 - **LLaMA 3 70B**
   - Máximo rendimientos y capacidad
   - 70 mil millones de parámetros
