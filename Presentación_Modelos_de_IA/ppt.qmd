@@ -13,15 +13,15 @@ format:
 
 # Agenda
 
-1. **Introducción a los LLMs**
-2. **¿Qué es LLaMA 3?**
-3. **Arquitectura y capacidades técnicas**
-4. **Rendimiento y benchmarks**
-5. **Aplicaciones y casos de uso**
-6. **Open source y ecosistema**
-7. **Limitaciones y desafíos**
-8. **Tendencias y futuro**
-9. **Conclusiones**
+1. Introducción a los LLMs
+2. Definir LLaMA 3
+3. Arquitectura y capacidades técnicas
+4. Rendimiento y benchmarks
+5. Aplicaciones y casos de uso
+6. Ecosistema
+7. Limitaciones y desafíos
+8. Tendencias y futuro
+9. Conclusiones
 
 
 
@@ -48,7 +48,7 @@ format:
 
 # ¿Qué es LLaMA 3?
 
-- Modelo de lenguaje grande (LLM) lanzado por Meta en abril de 2024.
+- Es un modelo de lenguaje grande (LLM) lanzado por Meta en abril de 2024.
 - Diseñado para tareas avanzadas de procesamiento de lenguaje natural (como comprensión, generación y razonamiento sobre texto).
 - Es open source: pesos y documentación públicos, promoviendo el acceso comunitario (el modelo se puede descargar, modificar y usar).
 - LLaMA 3 fue entrenado con más de 15 billones de tokens basados datasets de: common crawl, wikipedia, libros de dominio público, papers científicos y repositorios open source.
@@ -63,6 +63,7 @@ format:
 | LLaMA 3.1   | 2024  | 8B, 70B, 405B      | 128,000           | Open source               | Máxima capacidad, contexto largo       |
 
 > Nota:
+
 - 128K tokens es similar a 90000 palabras, mientras que 8192 a 6000 palabras.
 - Se estima que GPT4 tiene 1.7 trillones de parámetros (aproximadamente 4 veces más que LLaMA 3.1).
 
@@ -106,17 +107,12 @@ Métricas utilizadas para comparar LLMs:
 - **GPQA (General Knowledge Questions Advanced)**
   - Mide la habilidad del modelo para responder correctamente preguntas avanzadas de conocimiento general.
 
-- **MATH (Mathematics Benchmark)**
-  - Evalúa cálculo, álgebra, geometría y razonamiento matemático.
-
 - **HumanEval**
   - Benchmark de referencia para tareas de programación y generación automática de código.
 
 - **MGSM (Multilingual Grade School Math)**
   - Mide competencia matemática básica y habilidades multilingües.
 
-- **DROP (Discrete Reasoning Over Paragraphs)**
-  - Mide comprensión lectora y razonamiento complejo sobre textos largos.
 
 ## Benchmark sobre distintos LLMs
 
@@ -124,11 +120,8 @@ Métricas utilizadas para comparar LLMs:
 |-----------------|--------------|--------|---------------|----------------|
 | **MMLU (%)**    | 83.7         | **88.7**   | 86.8          | **81.9**           |
 | **GPQA (%)**    | **24.6**         | **53.6**   | 50.4          | 35.7           |
-| **MATH (%)**    | 67.8         | **76.6**   | 68.5          | **60.1**           |
 | **HumanEval (%)** | 84.1       | **90.2**   | 84.9          | **67.0**           |
 | **MGSM (%)**    | 79.0         | **90.5**   | 88.5          | **74.5**           |
-| **DROP (f1)**   | 83.5         | **93.4**   | 86.0          | **78.9**           |
-
 >*Fuentes: Meta AI Blog, OpenAI Hello GPT‑4o, Anthropic Claude 3, Google Gemini Pro, Hugging Face Leaderboard - Julio 2024.*
 
 
@@ -153,22 +146,6 @@ Métricas utilizadas para comparar LLMs:
 
 
 
-# Open Source
-
-- **Licencia abierta:**  
-  - Open source, con pesos y documentación accesible.
-  - Permite uso académico, empresarial y personal sin costo.
-  - **Restricciones:** 
-    - No se puede usar LLaMA para crear otro modelo de gran escala sin permiso de Meta. 
-    - Prohibido utilizarlo para actividades ilícitas.
-    
-- **Accesibilidad de los pesos:**  
-  - Cualquier persona puede descargar los modelos, auditarlos, adaptarlos y hacer fine-tuning localmente o en la nube.
-
-- **Contribuciones de la comunidad:**  
-  - Modelos multilingües y adaptados para derecho, medicina, programación, etc. Ejemplo: [LLaMA-3-8B-Orca](https://huggingface.co/Open-Orca/OpenOrca-Llama-3-8B).
-  - llama.cpp: librería open source que permite correr LLaMA 3.1 en CPU, Raspberry Pi, Macbooks y servidores, sin requerir GPU. Permite reducir el tamaño sin perder mucha precisión y ejecución en dispositivos móviles.
-
 # Ecosistema
 
 - **Versatilidad de despliegue:**  
@@ -188,9 +165,9 @@ Métricas utilizadas para comparar LLMs:
   - Fácil integración en pipelines de CI/CD mediante Docker y Kubernetes.
 
 - **Frameworks de soporte:**  
-  - [llama.cpp](https://github.com/ggerganov/llama.cpp): inferencia eficiente en CPU/edge/móvil
+  - [LLaMA.cpp](https://github.com/ggerganov/LLaMA.cpp): inferencia eficiente en CPU/edge/móvil
   - [vLLM](https://github.com/vllm-project/vllm): inferencia ultra-rápida en GPU
-  - [Ollama](https://ollama.com): despliegue y manejo fácil de modelos en local
+  - [OLLaMA](https://oLLaMA.com): despliegue y manejo fácil de modelos en local
 
 
 
@@ -266,4 +243,4 @@ Métricas utilizadas para comparar LLMs:
 - [Anthropic Claude 3.5 Sonnet](https://www.anthropic.com/news/claude-3-5-sonnet)  
 - [Google Gemini AI](https://blog.google/technology/ai/google-gemini-ai/)  
 - [Hugging Face Open LLM Leaderboard](https://huggingface.co/spaces/HuggingFaceH4/open_llm_leaderboard)
-    (https://ai.meta.com/resources/models-and-libraries/llama-downloads/)).
+    (https://ai.meta.com/resources/models-and-libraries/LLaMA-downloads/)).
