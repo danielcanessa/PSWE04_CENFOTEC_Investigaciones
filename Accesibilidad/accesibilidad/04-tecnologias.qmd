@@ -1,0 +1,42 @@
+# Tecnologías de Apoyo
+
+Las tecnologías de apoyo son herramientas, dispositivos o software diseñados para aumentar, mantener o mejorar las capacidades funcionales de las personas con discapacidades. En el entorno digital, estas tecnologías permiten una interacción más equitativa con sistemas informáticos y aplicaciones web [@assistivetech2020].
+
+Estas herramientas no solo facilitan el acceso, sino que también empoderan a los usuarios al permitirles una participación más autónoma, eficiente y segura en la sociedad digital. A continuación, se detallan las categorías principales de tecnologías de apoyo y su aplicación en entornos de software.
+
+## Lectores de pantalla
+
+Los lectores de pantalla convierten el texto en la pantalla en audio o en braille digital a través de una línea braille. Son esenciales para personas ciegas o con baja visión. Algunos de los más reconocidos son:
+
+- **JAWS (Job Access With Speech)**: software comercial ampliamente utilizado en entornos corporativos y educativos.
+- **NVDA (NonVisual Desktop Access)**: lector de pantalla gratuito y de código abierto [@nvda2023].
+
+Estos programas interpretan el contenido de una página web y dependen en gran medida del uso correcto del HTML semántico, etiquetas `alt` en imágenes, encabezados jerárquicos (`h1`, `h2`, etc.) y etiquetas ARIA para describir componentes interactivos.
+
+## Magnificadores de pantalla
+
+Dirigidos a personas con baja visión, los magnificadores permiten ampliar el contenido en pantalla, ajustar colores, brillo y contraste, y utilizar punteros personalizados. Algunos sistemas operativos como Windows y macOS incluyen estos magnificadores de forma nativa.
+
+## Tecnologías de entrada alternativa
+
+Dispositivos como teclados adaptados, ratones especiales, switches (interruptores) o sistemas de seguimiento ocular permiten a personas con discapacidades motrices controlar la computadora. También existen softwares como **On-Screen Keyboards** y tecnologías que permiten la navegación solo con comandos de voz o movimientos oculares [@gazeinput2021].
+
+## Reconocimiento de voz
+
+Herramientas como **Dragon NaturallySpeaking** permiten controlar el sistema operativo, redactar textos o realizar búsquedas sin utilizar las manos [@dragon2021]. Esta tecnología es útil no solo para personas con discapacidades físicas, sino también en contextos en los que el uso del teclado no es viable.
+
+## Software de apoyo cognitivo
+
+Aplicaciones que simplifican interfaces, organizan tareas o brindan recordatorios visuales pueden ser útiles para personas con discapacidades cognitivas o dificultades del aprendizaje. Ejemplos incluyen lectores de texto lento, correctores contextuales y aplicaciones de organización secuencial.
+
+## Compatibilidad como responsabilidad del desarrollo
+
+La funcionalidad efectiva de estas tecnologías depende en gran medida de que el software o sitio web sea compatible. Por eso, es responsabilidad del equipo de desarrollo seguir prácticas como:
+
+- No bloquear accesos por teclado.
+- Utilizar etiquetas claras en formularios.
+- Validar contenido con herramientas de asistencia reales.
+- Incluir mecanismos de personalización de la experiencia para diversos perfiles de usuario [@w3cuserneeds].
+
+Integrar la compatibilidad con tecnologías de apoyo desde el inicio del diseño no solo previene errores costosos, sino que también promueve la equidad y usabilidad para todos.
+

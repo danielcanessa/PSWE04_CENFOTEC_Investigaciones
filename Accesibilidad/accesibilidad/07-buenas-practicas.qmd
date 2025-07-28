@@ -1,0 +1,26 @@
+# Buenas Prácticas de Desarrollo Accesible
+
+La implementación de buenas prácticas de accesibilidad durante el desarrollo de software es clave para garantizar que las aplicaciones sean utilizables por la mayor cantidad de personas posible, incluyendo aquellas con discapacidades. Estas prácticas deben ser consideradas desde las etapas iniciales del diseño hasta el mantenimiento posterior del sistema [@bocquet2018].
+
+## Diseño Inclusivo desde el Inicio
+
+Aplicar principios de diseño universal e inclusivo permite anticipar barreras y resolverlas proactivamente. Esto incluye el uso de estructuras claras, navegación consistente, jerarquías visuales comprensibles y contenido textual claro y directo [@govukdesign].
+
+## Código Semántico y ARIA
+
+El uso adecuado de HTML semántico mejora la interpretación de la interfaz por tecnologías de asistencia. Cuando es necesario, los atributos ARIA (`aria-label`, `aria-live`, etc.) deben utilizarse correctamente para enriquecer la accesibilidad sin generar confusión o ruido innecesario [@mdnaria].
+
+## Soporte para Navegación por Teclado
+
+Todo contenido interactivo (botones, formularios, menús) debe ser operable mediante teclado. Es fundamental seguir un orden de tabulación lógico y visible, así como ofrecer indicadores de foco accesibles.
+
+## Contraste y Escalabilidad
+
+Los colores deben tener suficiente contraste entre fondo y texto (mínimo 4.5:1 recomendado por WCAG). Además, los textos deben poder escalar con el zoom del navegador sin pérdida de funcionalidad ni legibilidad.
+
+## Validación y Pruebas
+
+El uso de herramientas como **WAVE**, **Lighthouse**, **Axe**, así como pruebas manuales con lectores de pantalla (NVDA, VoiceOver), son esenciales para validar la accesibilidad real del sistema. Incluir a personas con discapacidad en las pruebas mejora la cobertura y detecta problemas que los análisis automáticos no identifican [@accessibilitytesting2022].
+
+Implementar estas prácticas no solo mejora la experiencia de personas con discapacidad, sino que también beneficia a todos los usuarios mediante interfaces más claras, consistentes y robustas.
+

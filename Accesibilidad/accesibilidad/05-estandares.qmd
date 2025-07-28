@@ -1,0 +1,36 @@
+# Estándares y Normativas
+
+La accesibilidad digital se rige por un conjunto de estándares técnicos y normativas legales que buscan garantizar que todas las personas, independientemente de sus capacidades, puedan acceder y utilizar productos y servicios digitales en igualdad de condiciones.
+
+## WCAG: el estándar de referencia
+
+Las **Web Content Accessibility Guidelines (WCAG)**, desarrolladas por el World Wide Web Consortium (W3C), son el marco técnico más reconocido a nivel mundial en accesibilidad web [@wcag2023]. Estas pautas están estructuradas en torno a cuatro principios fundamentales conocidos por sus siglas en inglés como **POUR**:
+
+- **Perceptible:** la información debe estar disponible para los sentidos del usuario (vista, oído, etc.).
+- **Operable:** los componentes de la interfaz deben ser manejables por cualquier medio (teclado, voz, etc.).
+- **Comprensible:** el contenido debe ser claro, legible y predecible.
+- **Robusto:** el contenido debe ser interpretable por una amplia variedad de agentes de usuario, incluidas tecnologías de asistencia.
+
+Las WCAG se presentan en diferentes versiones (2.0, 2.1 y próximamente 3.0) y niveles de conformidad (A, AA, AAA). Actualmente, el nivel **AA** es el más utilizado como estándar mínimo aceptable en el desarrollo de software público y privado.
+
+## Tendencias hacia WCAG 3.0
+
+La futura versión WCAG 3.0 busca un enfoque más flexible y continuo, incluyendo nuevas métricas de accesibilidad, estructuras evaluativas más inclusivas y adaptaciones para tecnologías emergentes como realidad virtual y interfaces por voz [@w3c2021].
+
+## Normativas legales en distintos países
+
+Muchos países han adoptado leyes que toman como base las WCAG:
+
+- **Estados Unidos:** la **Sección 508** exige que la tecnología electrónica del gobierno federal sea accesible a personas con discapacidad.
+- **Unión Europea:** la **Directiva 2016/2102** obliga a organismos públicos a hacer accesibles sus sitios y apps móviles [@euaccessibility2016].
+- **Canadá:** la **Ley de Accesibilidad de Canadá (ACA)** establece requisitos para sectores regulados a nivel federal.
+- **España y América Latina:** diversos países han incorporado la accesibilidad en sus leyes de servicios digitales o derechos de las personas con discapacidad, aunque con diferentes grados de aplicación y fiscalización [@ontiveros2020].
+
+## Evaluación y cumplimiento
+
+La verificación del cumplimiento de las WCAG puede hacerse mediante herramientas automáticas (como WAVE o Axe), auditorías expertas o pruebas con usuarios reales. Cada enfoque aporta diferentes niveles de profundidad y realismo.
+
+## Más allá del cumplimiento
+
+Cumplir con las normas es un primer paso, pero no garantiza por sí solo una buena experiencia para personas con discapacidad. La verdadera accesibilidad requiere adoptar una **cultura organizacional inclusiva**, involucrar a usuarios con discapacidad desde la etapa de diseño, y comprometerse con la mejora continua.
+

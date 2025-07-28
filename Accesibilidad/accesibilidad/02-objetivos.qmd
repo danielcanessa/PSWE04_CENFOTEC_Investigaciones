@@ -1,0 +1,11 @@
+# Objetivos
+
+## Objetivo general
+
+Analizar el estado actual de la accesibilidad digital en el desarrollo de software, considerando estándares, tecnologías y barreras comunes, con el fin de reflexionar sobre su importancia ética, técnica y social en la construcción de soluciones digitales inclusivas.
+
+## Objetivos específicos
+
+- Investigar las tecnologías de apoyo más utilizadas por personas con discapacidad en entornos digitales.
+- Examinar los principales estándares y normativas internacionales que rigen la accesibilidad digital, como las WCAG y la legislación vigente.
+- Identificar buenas prácticas de desarrollo accesible y reflexionar sobre su aplicación en proyectos reales, considerando experiencias discutidas en el aula.

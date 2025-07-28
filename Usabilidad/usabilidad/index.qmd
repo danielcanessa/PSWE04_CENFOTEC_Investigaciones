@@ -1,0 +1,8 @@
+---
+lang: es
+---
+
+
+# Abstract {.unnumbered}
+
+Este informe presenta un análisis integral del concepto de usabilidad aplicado al desarrollo de software. A partir de una revisión del estado del arte, se abordan definiciones clave, principios fundamentales como las heurísticas de Nielsen y estándares reconocidos como la norma ISO 9241-210. Se examinan también métodos de evaluación de la usabilidad, incluyendo pruebas con usuarios, análisis de tareas y escalas estandarizadas como SUS, así como casos reales de aplicación en la industria.

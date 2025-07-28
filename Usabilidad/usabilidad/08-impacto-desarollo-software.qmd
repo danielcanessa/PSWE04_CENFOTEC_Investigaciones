@@ -1,0 +1,46 @@
+# Impacto de la Usabilidad en el Desarrollo de Software
+
+La usabilidad tiene un impacto significativo y multidimensional en el ciclo de vida del desarrollo de software. No solo mejora la experiencia del usuario final, sino que también transforma la manera en que se planifica, diseña, implementa y mantiene un sistema interactivo.
+
+## 1. En la fase de análisis y diseño
+
+Incorporar principios de usabilidad desde el análisis de requerimientos permite identificar **necesidades reales** de los usuarios y evita suposiciones equivocadas. Esto se traduce en mejores historias de usuario, flujos más naturales y arquitecturas orientadas a la interacción, no solo a la lógica técnica.
+
+Diseñar interfaces centradas en el usuario implica considerar aspectos como:
+
+- Jerarquía visual adecuada.
+- Lenguaje claro y comprensible.
+- Accesibilidad desde diferentes dispositivos y perfiles de usuario.
+
+## 2. Durante el desarrollo
+
+Aplicar heurísticas y guías de estilo estandarizadas ayuda a que los equipos de desarrollo construyan productos consistentes y predecibles. Frameworks de UI modernos como Material Design o Bootstrap incorporan buenas prácticas de usabilidad desde su base, reduciendo el margen de error en la implementación de interfaces [@materialdesign].
+
+Además, realizar pruebas de usabilidad durante los sprints permite **iterar sobre soluciones reales** y no sobre supuestos, alineando mejor los entregables con las expectativas del usuario.
+
+## 3. En la validación y entrega
+
+Un producto con buena usabilidad:
+
+- Requiere menos soporte técnico.
+- Reduce el tiempo de capacitación.
+- Presenta menos errores de uso.
+- Aumenta la satisfacción del cliente.
+
+Esto tiene implicaciones directas en la aceptación del producto, el cumplimiento de los requisitos funcionales, y la rentabilidad del proyecto.
+
+## 4. En el mantenimiento y evolución
+
+Los sistemas bien diseñados desde el punto de vista de la usabilidad tienden a ser **más sostenibles y fáciles de adaptar**. La documentación es más clara, la interfaz requiere menos ajustes, y las decisiones de rediseño pueden basarse en métricas de experiencia de usuario.
+
+Además, mantener la consistencia de la interfaz facilita la incorporación de nuevas funcionalidades sin romper la experiencia del usuario.
+
+## 5. Impacto organizacional y cultural
+
+Adoptar una cultura centrada en la usabilidad también transforma las dinámicas internas de los equipos:
+
+- Mejora la comunicación entre diseñadores, desarrolladores y stakeholders.
+- Promueve la validación temprana y continua con usuarios reales.
+- Fomenta una mentalidad ágil, iterativa y enfocada en el valor.
+
+

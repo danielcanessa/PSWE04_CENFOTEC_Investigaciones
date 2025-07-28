@@ -1,0 +1,7 @@
+# Introducción
+
+La creciente digitalización de los servicios, la educación, el comercio y la interacción social ha transformado profundamente la forma en que las personas acceden a la información y participan en la vida cotidiana. En este contexto, la accesibilidad digital se ha convertido en un componente esencial del desarrollo de software responsable, ya que garantiza que los entornos digitales sean utilizables por todas las personas, incluidas aquellas con discapacidades visuales, auditivas, cognitivas o motrices.
+
+Más allá de una obligación legal o técnica, la accesibilidad representa un compromiso ético con la equidad, la inclusión y los derechos humanos. Incorporar criterios de accesibilidad en el diseño y desarrollo de software permite derribar barreras que históricamente han excluido a una parte significativa de la población del uso pleno de las tecnologías.
+
+Este informe busca explorar el estado actual de la accesibilidad digital desde una perspectiva técnica y reflexiva. Se revisan los estándares y tecnologías que la sustentan, las barreras más comunes que aún persisten, y las buenas prácticas aplicables en el proceso de desarrollo. 

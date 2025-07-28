@@ -1,0 +1,9 @@
+# Introducción
+
+En la actualidad, el desarrollo de software no solo se enfoca en la funcionalidad y el rendimiento técnico, sino también en la calidad de la experiencia que ofrece a sus usuarios. En este contexto, la **usabilidad** se ha consolidado como un criterio fundamental para evaluar la eficacia, eficiencia y satisfacción con la que un producto digital permite alcanzar objetivos específicos.
+
+La usabilidad forma parte integral de la disciplina de la experiencia de usuario (UX), y abarca múltiples dimensiones del diseño y la interacción humano-computadora. Su correcta implementación puede marcar la diferencia entre una solución tecnológica exitosa y otra que, pese a estar técnicamente bien construida, no logra ser adoptada por sus usuarios.
+
+Este informe tiene como propósito explorar el concepto de usabilidad en el contexto del desarrollo de software, analizando su evolución, principios fundamentales, estándares más reconocidos como las heurísticas de Jakob Nielsen y la norma ISO 9241-210, así como ejemplos reales de aplicación. Además, se plantea una reflexión sobre su evaluación práctica, su impacto en la calidad del producto y la importancia de considerarla desde las primeras etapas del ciclo de vida del software.
+
+A través de esta investigación, se busca no solo comprender la relevancia técnica de la usabilidad, sino también promover una cultura de diseño centrado en el usuario como valor esencial en la ingeniería del software contemporánea.

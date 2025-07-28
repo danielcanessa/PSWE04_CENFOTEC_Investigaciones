@@ -1,0 +1,35 @@
+# Barreras Comunes
+
+A pesar de los avances en normativas y herramientas, muchas plataformas digitales siguen presentando barreras que dificultan o impiden su uso por parte de personas con discapacidad. Estas barreras afectan la percepción, navegación o comprensión del contenido, y suelen estar asociadas a malas prácticas de diseño, desconocimiento técnico o falta de pruebas de accesibilidad [@webaimbarriers2024].
+
+## Barreras Visuales
+
+- Contraste insuficiente entre texto y fondo.
+- Imágenes sin texto alternativo (`alt`) descriptivo.
+- Contenido visual importante transmitido únicamente mediante color.
+
+## Barreras Auditivas
+
+- Videos sin subtítulos, transcripción o interpretación en lengua de señas.
+- Alertas sonoras sin alternativas visuales.
+
+## Barreras de Navegación
+
+- Elementos que no se pueden operar mediante teclado.
+- Orden de tabulación ilógico.
+- Controles interactivos sin etiquetas accesibles.
+
+## Barreras Cognitivas y del Lenguaje
+
+- Texto denso y sin estructura jerárquica clara.
+- Uso excesivo de jerga técnica o instrucciones ambiguas.
+- Interfaces sobrecargadas de estímulos o con navegación no intuitiva.
+
+## Barreras Técnicas
+
+- Falta de uso de HTML semántico.
+- Incompatibilidad con tecnologías de asistencia como lectores de pantalla.
+- Contenido dinámico que no notifica correctamente los cambios de estado.
+
+Identificar estas barreras es el primer paso para construir experiencias digitales más inclusivas. El uso de herramientas automáticas de evaluación, junto con pruebas manuales y la participación de usuarios con discapacidad, permite abordarlas de manera efectiva [@nielsenusability].
+

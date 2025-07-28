@@ -1,0 +1,28 @@
+# ¿Qué es la accesibilidad digital?
+
+La accesibilidad digital se refiere al diseño de productos, dispositivos, servicios o entornos digitales que sean utilizables por todas las personas, incluidas aquellas con discapacidades. Su objetivo es eliminar las barreras que dificultan el acceso a la información y a la funcionalidad de las plataformas tecnológicas [@w3c2018].
+
+En el contexto del desarrollo de software, la accesibilidad implica aplicar principios de diseño inclusivo que permitan el uso efectivo de una aplicación independientemente de las limitaciones físicas, cognitivas o sensoriales del usuario [@webaim2023]. Esto abarca desde interfaces visualmente comprensibles hasta estructuras que permitan navegación por teclado o compatibilidad con lectores de pantalla.
+
+Además de ser un derecho reconocido por normativas y estándares internacionales, la accesibilidad beneficia a un público más amplio, incluidos adultos mayores, personas con discapacidades temporales o incluso usuarios en contextos limitados, como luz solar intensa o conexiones lentas [@edelman2021].
+
+La promoción de la accesibilidad digital no solo es una responsabilidad técnica, sino también ética y social, alineada con el principio de equidad en el acceso a la información.
+
+## Dimensión social y legal
+
+La accesibilidad está estrechamente relacionada con los derechos humanos y con la necesidad de una sociedad digital verdaderamente inclusiva. Organizaciones como la ONU y la Convención sobre los Derechos de las Personas con Discapacidad han destacado que la accesibilidad en entornos digitales es una condición para la participación plena en la vida social, económica y cultural [@uncrpd2006].
+
+La falta de accesibilidad puede traducirse en exclusión y discriminación, lo cual ha llevado a que muchos países adopten leyes específicas que obligan a empresas y gobiernos a ofrecer productos y servicios digitales accesibles. Estas leyes buscan garantizar no solo el acceso, sino también la dignidad y autonomía de las personas con discapacidad.
+
+## Accesibilidad como ventaja estratégica
+
+Más allá del cumplimiento legal, la accesibilidad aporta ventajas competitivas. Mejora la experiencia general de los usuarios, reduce costos de rediseño, aumenta la fidelidad del cliente y expande el alcance de productos a nuevos segmentos de mercado [@forrester2022].
+
+De hecho, grandes compañías tecnológicas como Microsoft, Apple y Google han invertido fuertemente en accesibilidad como parte de su visión de innovación centrada en el ser humano.
+
+## Una tarea de todos
+
+Aunque muchas veces se asocia solo con el equipo de desarrollo o diseño, la accesibilidad digital requiere una visión interdisciplinaria. Involucra decisiones desde la arquitectura de la información hasta el contenido textual, pasando por el marketing y la estrategia organizacional.
+
+Reconocer que todas las personas, en algún momento de su vida, pueden enfrentar barreras temporales o permanentes refuerza la necesidad de integrar la accesibilidad como parte del estándar de calidad del software moderno.
+

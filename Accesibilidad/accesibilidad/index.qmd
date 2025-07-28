@@ -1,0 +1,11 @@
+---
+lang: es
+---
+
+
+# Abstract {.unnumbered}
+
+Este informe presenta un análisis integral sobre la accesibilidad digital en el desarrollo de software, abordando tanto su importancia social como sus fundamentos técnicos. Se parte de una revisión del estado actual en la materia, incluyendo tecnologías de apoyo, estándares internacionales como las WCAG y normativas relevantes, así como las barreras más comunes que enfrentan las personas con discapacidades visuales, auditivas, cognitivas o motrices al interactuar con plataformas digitales. Asimismo, se examinan buenas prácticas de diseño accesible y estrategias de desarrollo inclusivo implementadas en la industria. El informe concluye con una valoración crítica del estado actual y una invitación a incorporar la accesibilidad como un principio ético y técnico en cualquier proyecto de desarrollo.
+
+
+
