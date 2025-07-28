@@ -1,0 +1,62 @@
+# Evaluación de la Usabilidad
+
+Evaluar la usabilidad es una parte crítica del ciclo de vida de cualquier sistema interactivo. Permite identificar problemas que afectan la experiencia del usuario y mejora la calidad del producto antes de su lanzamiento. Existen enfoques cualitativos, cuantitativos y mixtos, que pueden aplicarse en diferentes etapas del desarrollo.
+
+## Métodos de evaluación
+
+### 1. Evaluación heurística
+
+Consiste en que expertos en usabilidad inspeccionan la interfaz y detectan problemas en función de principios generales (heurísticas), como las de Jakob Nielsen. Es rápida, económica y útil durante el diseño temprano, aunque depende de la experiencia del evaluador [@nielsen1995].
+
+### 2. Pruebas con usuarios
+
+Se pide a usuarios reales que realicen tareas específicas mientras se observa su interacción con el sistema. Permite obtener evidencia directa de problemas de uso, reacciones, dudas y tiempos de ejecución. Es uno de los métodos más confiables y reveladores.
+
+Tipos comunes:
+
+- **Moderadas**: un facilitador guía y observa.
+- **No moderadas**: el usuario realiza tareas por su cuenta.
+- **Presenciales o remotas**: dependiendo del contexto.
+
+### 3. Análisis de tareas
+
+Consiste en descomponer una tarea en pasos necesarios y analizar su complejidad, redundancia, secuencia lógica, y esfuerzo cognitivo. Permite rediseñar procesos para hacerlos más naturales y eficientes.
+
+### 4. Cuestionarios y encuestas
+
+Se utilizan instrumentos estandarizados para medir la percepción del usuario sobre la facilidad de uso. Algunos de los más comunes son:
+
+- **SUS (System Usability Scale)**
+- **QUIS (Questionnaire for User Interaction Satisfaction)**
+- **UEQ (User Experience Questionnaire)**
+
+Estos cuestionarios permiten comparar versiones del sistema y obtener datos cuantitativos sobre satisfacción y usabilidad percibida [@brooke1996].
+
+### 5. Métricas de interacción
+
+Algunos indicadores clave que se suelen medir incluyen:
+
+- Tiempo promedio por tarea.
+- Número de errores cometidos.
+- Tasa de éxito de las tareas.
+- Número de clics o pasos requeridos.
+- Nivel de satisfacción (autoinformado).
+
+Estas métricas pueden recopilarse mediante herramientas analíticas o manualmente durante las sesiones de prueba.
+
+## Cuándo evaluar
+
+La evaluación de la usabilidad debe realizarse en diferentes fases del desarrollo:
+
+- **Exploratoria**: en etapas tempranas para detectar problemas de diseño conceptual.
+- **Formativa**: durante el desarrollo para ajustar decisiones de diseño.
+- **Sumativa**: al final del desarrollo, como validación del producto final.
+
+## Herramientas de apoyo
+
+Hoy en día existen múltiples plataformas y herramientas para facilitar la evaluación de la usabilidad, entre ellas:
+
+- **Figma, Maze, Lookback** (prototipado y pruebas)
+- **Hotjar, FullStory** (análisis de comportamiento)
+- **Optimal Workshop** (testing de arquitectura de información)
+

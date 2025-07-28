@@ -1,0 +1,13 @@
+# Objetivos
+
+## Objetivo general
+
+Analizar el concepto de usabilidad en el desarrollo de software, considerando sus principios fundamentales, estándares internacionales y ejemplos de aplicación, con el fin de reflexionar sobre su impacto en la experiencia de usuario y en la calidad de los productos digitales.
+
+## Objetivos específicos
+
+- Investigar definiciones clave y fundamentos teóricos sobre la usabilidad en contextos de desarrollo de software.
+- Describir los principios de diseño centrado en el usuario y las heurísticas de usabilidad más ampliamente reconocidas.
+- Examinar estándares aplicables a la usabilidad, como la norma ISO 9241-210, y su uso en entornos reales de desarrollo.
+- Identificar ejemplos concretos de aplicación de prácticas de usabilidad en proyectos de software.
+- Reflexionar sobre la importancia de la usabilidad y su evaluación dentro del ciclo de vida del desarrollo de software.

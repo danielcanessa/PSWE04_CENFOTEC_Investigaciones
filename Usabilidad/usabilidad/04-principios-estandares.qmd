@@ -1,0 +1,68 @@
+# Principios y Estándares de Usabilidad
+
+Los principios de usabilidad orientan el diseño de sistemas interactivos que buscan ser comprensibles, eficientes y satisfactorios para el usuario. Su aplicación práctica se ha formalizado tanto en metodologías de evaluación como en estándares técnicos reconocidos internacionalmente.
+
+## Heurísticas de Jakob Nielsen
+
+Uno de los marcos más influyentes en la práctica de la usabilidad son las **10 heurísticas de Nielsen**, formuladas originalmente en 1994 y ampliamente utilizadas como guía para la evaluación de interfaces [@nielsen1995]. Estas heurísticas no son reglas estrictas, sino principios generales de diseño centrado en el usuario:
+
+1. **Visibilidad del estado del sistema**  
+   El sistema debe mantener informado al usuario de lo que está ocurriendo mediante retroalimentación adecuada.
+
+2. **Correspondencia entre el sistema y el mundo real**  
+   El sistema debe usar conceptos, términos y convenciones familiares para el usuario.
+
+3. **Control y libertad del usuario**  
+   Debe ser posible deshacer o rehacer acciones fácilmente.
+
+4. **Consistencia y estándares**  
+   Los usuarios no deben preguntarse si diferentes palabras, situaciones o acciones significan lo mismo.
+
+5. **Prevención de errores**  
+   Es mejor prevenir errores antes que mostrar mensajes de error.
+
+6. **Reconocimiento en lugar de memorización**  
+   Minimizar la carga de memoria del usuario haciendo visibles objetos, acciones y opciones.
+
+7. **Flexibilidad y eficiencia de uso**  
+   El sistema debe permitir que usuarios expertos aceleren sus tareas mediante accesos directos.
+
+8. **Estética y diseño minimalista**  
+   No debe haber información irrelevante que compita con lo esencial.
+
+9. **Ayudar a los usuarios a reconocer, diagnosticar y recuperarse de errores**  
+   Los mensajes de error deben ser expresivos, señalar el problema y sugerir soluciones.
+
+10. **Ayuda y documentación**  
+    Aunque lo ideal es que el sistema sea autoexplicativo, debe ofrecer ayuda accesible si se requiere.
+
+## Estándares Internacionales
+
+### ISO 9241-210
+
+Esta norma define los principios del diseño centrado en el usuario, entre ellos:
+
+- Comprensión del contexto de uso
+- Participación activa del usuario
+- Iteración de diseño basada en evaluación
+- Diseño holístico de la experiencia
+
+Se enfoca en garantizar que las necesidades, capacidades y limitaciones de los usuarios sean consideradas en cada etapa del ciclo de vida del producto [@iso9241-210].
+
+### ISO/IEC 25010
+
+La norma ISO/IEC 25010 establece un modelo de calidad del software donde la usabilidad es una de las ocho características principales, subdividida en:
+
+- **Reconocibilidad**
+- **Aprendizaje**
+- **Operabilidad**
+- **Protección frente a errores**
+- **Estética**
+- **Accesibilidad** [@iso25010]
+
+Este estándar se utiliza ampliamente en procesos de aseguramiento de calidad, pruebas de usabilidad y certificaciones de productos digitales.
+
+## Aplicación en proyectos reales
+
+En la industria del software, muchas organizaciones utilizan checklists basados en estas heurísticas para evaluar interfaces, complementando con pruebas con usuarios, entrevistas, análisis de tareas y técnicas como el "cognitive walkthrough". En el desarrollo ágil, se integran como criterios de aceptación dentro de historias de usuario.
+

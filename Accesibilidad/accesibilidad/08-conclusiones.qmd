@@ -1,0 +1,16 @@
+# Conclusiones
+
+La accesibilidad digital constituye un componente esencial en el desarrollo de software inclusivo y equitativo. A lo largo de este informe se ha evidenciado que, más allá del cumplimiento legal o normativo, la accesibilidad representa un compromiso ético y técnico con la diversidad humana, y un factor clave para garantizar el acceso universal a la información y los servicios digitales.
+
+El análisis de las tecnologías de apoyo, los estándares internacionales como las WCAG, y las principales barreras que enfrentan los usuarios con discapacidad, permite reconocer la complejidad y transversalidad de este campo. Asimismo, la reflexión sobre buenas prácticas demuestra que la accesibilidad no debe considerarse un requisito adicional, sino una parte integral del ciclo de vida del software.
+
+Desde una perspectiva educativa, esta investigación refuerza la necesidad de formar profesionales que comprendan la accesibilidad como una responsabilidad compartida y que desarrollen competencias para diseñar soluciones tecnológicas centradas en las personas.
+
+Finalmente, se concluye que avanzar hacia una cultura de accesibilidad digital implica:
+
+- Adoptar estándares técnicos como parte de la calidad del producto.
+- Involucrar a usuarios con discapacidad en el proceso de diseño y validación.
+- Fomentar el trabajo interdisciplinario entre diseño, desarrollo, comunicación y gestión.
+- Reconocer que la accesibilidad mejora la experiencia de **todas** las personas, no solo de quienes presentan alguna discapacidad.
+
+La accesibilidad digital no es una opción, sino una condición necesaria para construir una sociedad más justa e inclusiva en la era de la información.

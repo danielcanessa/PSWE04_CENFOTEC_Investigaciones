@@ -1,0 +1,31 @@
+# Ejemplos de Aplicación
+
+La usabilidad es un factor determinante en el éxito o fracaso de productos digitales. A continuación se presentan casos reales donde la aplicación (o falta de aplicación) de principios de usabilidad ha tenido un impacto directo en la experiencia del usuario y en los resultados del proyecto.
+
+## Caso 1: Rediseño de GOV.UK
+
+El gobierno del Reino Unido rediseñó todo su portal digital bajo una estrategia de diseño centrado en el usuario. Utilizaron principios como simplicidad, lenguaje claro y navegación basada en tareas.
+
+Como resultado, se logró:
+
+- Reducir significativamente las llamadas a los centros de atención.
+- Aumentar la eficiencia de procesos como renovación de pasaportes y licencias.
+- Recibir el reconocimiento a nivel internacional por accesibilidad y facilidad de uso [@govuk2016].
+
+## Caso 2: Interfaz de Netflix
+
+Netflix es un ejemplo de cómo la usabilidad y la personalización trabajan juntas. La plataforma evalúa constantemente la experiencia de usuario mediante:
+
+- Pruebas A/B de diseños de portada.
+- Navegación eficiente y recomendaciones con base en patrones de uso.
+- Accesibilidad desde múltiples dispositivos y controles consistentes.
+
+Esta estrategia ha contribuido a una experiencia fluida que se adapta al comportamiento del usuario, aumentando la retención y fidelización [@netflixux].
+
+## Caso 3: Fracaso inicial de Healthcare.gov
+
+En contraste, el sitio **Healthcare.gov** (EE. UU.) tuvo una crisis de usabilidad en su lanzamiento en 2013. Problemas como formularios extensos, errores no explicativos, falta de feedback y tiempos de carga lentos causaron una baja adopción inicial, críticas públicas y una reconstrucción completa posterior [@healthcaregov].
+
+Este caso mostró que los problemas de usabilidad pueden tener consecuencias políticas, legales y financieras significativas cuando no se consideran desde el inicio.
+
+

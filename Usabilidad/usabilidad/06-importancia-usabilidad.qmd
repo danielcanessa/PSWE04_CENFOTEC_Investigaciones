@@ -1,0 +1,25 @@
+# Importancia de la Usabilidad
+
+La usabilidad es un componente esencial en el desarrollo de productos digitales efectivos, accesibles y centrados en el usuario. Su importancia radica en que influye directamente en la **eficiencia del sistema**, la **satisfacción del usuario** y la **viabilidad del producto en el mercado**.
+
+## Mejora de la experiencia de usuario
+
+Un sistema usable permite a los usuarios alcanzar sus objetivos de forma rápida, clara y sin errores innecesarios. Esta facilidad de uso reduce la frustración, minimiza los tiempos de aprendizaje y promueve la confianza del usuario hacia la herramienta digital [@norman2013].
+
+## Reducción de costos a largo plazo
+
+Integrar la usabilidad desde las primeras fases del desarrollo disminuye significativamente los costos de soporte técnico, capacitación y corrección de errores posteriores. Jakob Nielsen estima que por cada dólar invertido en usabilidad, se puede obtener un retorno de inversión de hasta cien dólares [@nielsenbusinesscase].
+
+## Ventaja competitiva en el mercado
+
+La usabilidad se ha convertido en un factor diferenciador clave en un entorno donde los usuarios comparan y abandonan aplicaciones con gran facilidad. Un producto que prioriza la experiencia del usuario puede destacarse en sectores altamente competitivos como el comercio electrónico, educación en línea o servicios financieros [@garrett2011].
+
+## Inclusión y equidad digital
+
+Un diseño usable no solo es más eficiente, sino también más inclusivo. Sistemas que contemplan principios de usabilidad suelen estar mejor adaptados a personas con diferentes niveles de alfabetización digital, discapacidades o contextos culturales diversos. Esto se alinea con objetivos más amplios de **accesibilidad universal** y **diseño ético**.
+
+## Evaluación objetiva de calidad
+
+La usabilidad también permite establecer métricas claras y replicables para evaluar la calidad del producto. Parámetros como el tiempo de tarea, tasa de error o índice de satisfacción permiten tomar decisiones basadas en evidencia, facilitando la mejora continua del software.
+
+

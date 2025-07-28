@@ -1,0 +1,32 @@
+project:
+  type: book
+
+book:
+  title: "Investigación sobre Usabilidad"
+  subtitle: "PSWE-04 Diseño de Software"
+  author:
+    - Daniel Canessa Valverde
+    - Stephanie Delgado Brenes
+  date: "2025-07-27"
+  chapters:
+    - index.qmd
+    - 01-introduccion.qmd
+    - 02-objetivos.qmd
+    - 03-usabilidad.qmd
+    - 04-principios-estandares.qmd
+    - 05-ejemplos-de-aplicacion.qmd
+    - 06-importancia-usabilidad.qmd
+    - 07-como-se-evalua.qmd
+    - 08-impacto-desarollo-software.qmd
+    - 09-conclusiones.qmd
+    - references.qmd
+
+bibliography: references.bib
+csl: ieee.csl
+
+format:
+  pdf:
+    documentclass: scrreprt
+
+
+

@@ -1,0 +1,50 @@
+# Usabilidad en el Desarrollo de Software
+
+## Definición del concepto
+
+La usabilidad es definida por la norma **ISO 9241-210** como "el grado en que un sistema, producto o servicio puede ser usado por usuarios específicos para lograr objetivos específicos con efectividad, eficiencia y satisfacción en un contexto de uso determinado" [@iso9241-210].
+
+Desde una perspectiva práctica, la usabilidad se refiere a la facilidad con la que las personas pueden aprender a interactuar con un sistema, recordar cómo utilizarlo, y realizar sus tareas sin errores o frustraciones. Jakob Nielsen considera que la usabilidad incluye atributos como facilidad de aprendizaje, eficiencia de uso, memorización, prevención de errores y satisfacción subjetiva [@nielsen1994].
+
+Otros autores destacan también la importancia de la accesibilidad, el contexto de uso y la capacidad del sistema de adaptarse a diferentes niveles de experiencia del usuario [@bevan2009].
+
+## Evolución del término
+
+El concepto de usabilidad surgió como una respuesta al aumento en la complejidad de los sistemas computacionales a partir de la década de 1980. En sus inicios, estaba centrado en aspectos ergonómicos y pruebas de laboratorio, donde se medía principalmente la eficiencia operativa del sistema.
+
+Con el tiempo, y particularmente con el auge de la experiencia de usuario (UX) a partir del año 2000, la usabilidad se transformó en una disciplina interdisciplinaria que integra psicología cognitiva, diseño de interfaces, ingeniería de software y antropología del uso [@norman2013].
+
+En la actualidad, se considera que la usabilidad debe incorporarse desde las primeras fases de diseño, como parte de un enfoque **centrado en el usuario** (UCD), promoviendo la iteración y la evaluación continua a través de prototipos, pruebas con usuarios y métricas cuantificables [@garrett2011].
+
+## Componentes clave de la usabilidad
+
+De acuerdo con Jakob Nielsen y la norma ISO, los componentes clave para evaluar la usabilidad de un sistema son:
+
+- **Eficacia**: grado en que los usuarios pueden completar tareas con precisión y completitud.
+- **Eficiencia**: relación entre la precisión/completitud y los recursos utilizados.
+- **Satisfacción**: comodidad y aceptación subjetiva por parte del usuario.
+- **Tasa de error**: frecuencia e impacto de los errores cometidos durante el uso.
+- **Facilidad de aprendizaje**: esfuerzo necesario para que nuevos usuarios se familiaricen con el sistema.
+
+Estos componentes permiten establecer indicadores medibles que apoyan procesos de mejora continua y decisiones informadas en proyectos reales.
+
+## Usabilidad vs. experiencia de usuario (UX)
+
+Aunque están estrechamente relacionadas, **usabilidad** y **experiencia de usuario (UX)** no son sinónimos. La usabilidad se enfoca en la **eficacia, eficiencia y satisfacción**, mientras que la UX abarca también factores emocionales, estéticos, de confianza y de valor percibido.
+
+Por ejemplo, una herramienta como una hoja de cálculo puede ser altamente usable (eficiente y funcional), pero ofrecer una experiencia de usuario limitada si no es atractiva visualmente o no proporciona una sensación positiva durante su uso.
+
+Norman (2013) sostiene que la experiencia del usuario ideal incluye tres niveles: visceral (emocional), conductual (usabilidad) y reflexivo (significado), siendo la usabilidad una base crítica, pero no suficiente por sí sola [@norman2013].
+
+## Aplicación práctica
+
+En contextos reales de desarrollo de software, la usabilidad se traduce en:
+
+- Formularios que evitan errores y validan datos en tiempo real.
+- Navegación clara, coherente y predecible.
+- Interfaces adaptadas para dispositivos móviles (responsive design).
+- Microinteracciones que dan retroalimentación inmediata.
+- Contenidos organizados según la lógica del usuario, no del sistema.
+
+Empresas como Google, Apple o GOV.UK aplican principios de usabilidad no solo como estrategia técnica, sino como un componente central de su cultura de producto [@govuk2016].
+

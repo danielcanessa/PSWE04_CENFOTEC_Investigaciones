@@ -1,0 +1,16 @@
+# Conclusiones
+
+La usabilidad se ha consolidado como un pilar fundamental en el desarrollo de software de calidad. Su correcta incorporación permite construir sistemas que no solo cumplen con los requerimientos funcionales, sino que también ofrecen experiencias eficientes, accesibles y satisfactorias para los usuarios.
+
+A lo largo de este informe se ha evidenciado que la usabilidad:
+
+- Contribuye a mejorar la experiencia de usuario al reducir la carga cognitiva, los errores y la frustración.
+- Se apoya en principios consolidados como las heurísticas de Nielsen y estándares internacionales como ISO 9241-210 e ISO/IEC 25010.
+- Se evalúa mediante métodos sistemáticos, incluyendo pruebas con usuarios, evaluaciones heurísticas y métricas cuantificables.
+- Tiene un impacto directo en la sostenibilidad del producto, los costos de desarrollo, el mantenimiento y la adopción por parte del usuario final.
+
+Además, los casos reales analizados demuestran que la usabilidad no es un lujo, sino una necesidad estratégica, tanto en productos públicos como comerciales. Ignorarla puede derivar en rechazo del sistema, pérdidas económicas y perjuicios a la imagen institucional.
+
+Finalmente, reflexionar sobre la usabilidad implica asumir una postura ética en el diseño de tecnología. Poner al usuario en el centro no solo mejora la eficiencia técnica, sino que promueve la inclusión, la equidad y la responsabilidad social en el desarrollo de software.
+
+En un mundo cada vez más digital, diseñar sistemas usables no es opcional: es un compromiso profesional con la calidad, la empatía y el impacto positivo de la tecnología en la vida de las personas.
